@@ -1,0 +1,48 @@
+/*
+reference values taken from https://docs.opencv.org/master/de/db2/laplace_8cpp-example.html#a17
+*/
+stencil blur (
+    float grid U(0 .. WIDTH-1, 0 .. HEIGHT-1),
+    float param sigma = 3.0,
+    float param f0 = 1.0 / 18.0,
+    float param s0 = exp(1.0),
+    float param s1 = exp(-1.0/18.0),
+    float param s2 = exp(-1.0/9.0),
+    float param s4 = exp(-2.0/9.0),
+    float param s5 = exp(-5.0/18.0),
+    float param s8 = exp(-4.0/9.0),
+    float param f = 1.0/((exp(1.0)) + 4.0 * (exp(-1.0/18.0) + exp(-1.0/9.0) + exp(-2.0/9.0) + exp(-4.0/9.0)) + 8.0 * exp(-5.0/18.0))
+    )
+{
+    iterate while t < 50;
+    domainsize = (2 .. WIDTH-3, 2 .. HEIGHT-3);
+
+    initial
+    {
+       U[x, y; 0] = 1;
+    }
+    
+    operation 
+    {
+        //float f0 = 1 / (2 * sigma ^ 2);
+    	//float s0 = exp ( 0 * f0);
+    	//float s1 = exp (-1 * f0);
+    	//float s2 = exp (-2 * f0);
+    	//float s4 = exp (-4 * f0);
+    	//float s5 = exp (-5 * f0);
+    	//float s8 = exp (-8 * f0);
+    	//float f = 1 / (s0 + 4 * (s1 + s2 + s4 + s8) + 8 * s5);
+    
+        U[x, y; t+1] = f * (
+        	s0 * U[x, y; t] +
+        	s1 * (U[x - 1, y; t] + U[x + 1, y; t] + U[x, y - 1; t] + U[x, y + 1; t]) +
+        	s2 * (U[x - 1, y - 1; t] + U[x + 1, y - 1; t] + U[x - 1, y + 1; t] + U[x + 1, y + 1; t]) +
+        	s4 * (U[x - 2, y; t] + U[x + 2, y; t] + U[x, y - 2; t] + U[x, y + 2; t]) +
+        	s5 * (
+        		U[x - 2, y - 1; t] + U[x - 1, y - 2; t] + U[x + 1, y - 2; t] + U[x + 2, y - 1; t] +
+        		U[x - 2, y + 1; t] + U[x - 1, y + 2; t] + U[x + 1, y + 2; t] + U[x + 2, y + 1; t]
+        	) +
+        	s8 * (U[x - 2, y - 2; t] + U[x + 2, y - 2; t] + U[x - 2, y + 2; t] + U[x + 2, y + 2; t])
+        );
+    }
+}

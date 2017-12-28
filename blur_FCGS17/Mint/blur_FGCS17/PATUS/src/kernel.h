@@ -1,0 +1,4 @@
+void blur_parm(float *  *  U_0_1_out, float *  U_0_0, float *  U_0_1, float sigma, float f0, float s0, float s1, float s2, float s4, float s5, float s8, float f, long WIDTH, long HEIGHT, long cb_x, long cb_y, long chunk, int _unroll_p3);
+void blur(float *  *  U_0_1_out, float *  U_0_0, float *  U_0_1, float sigma, float f0, float s0, float s1, float s2, float s4, float s5, float s8, float f, long WIDTH, long HEIGHT);
+void initialize_blur_parm(float *  U_0_0, float *  U_0_1, float sigma, float f0, float s0, float s1, float s2, float s4, float s5, float s8, float f, long WIDTH, long HEIGHT, long cb_x, long cb_y, long chunk);
+void initialize_blur(float *  U_0_0, float *  U_0_1, float sigma, float f0, float s0, float s1, float s2, float s4, float s5, float s8, float f, long WIDTH, long HEIGHT);

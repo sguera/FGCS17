@@ -1,0 +1,9 @@
+#PBS -N provajob-1
+#PBS -j oe
+#PBS -l nodes=1:ppn=24
+#PBS -l walltime=23:59:00
+#PBS -o /home/hpc/ihpc/ihpc07/workspace/blur_FGCS17/PATUS/jobs/compile_run.out
+echo "JOB is going to be executed on:"
+hostname
+source /home/hpc/ihpc/ihpc07/PROVA/util/BaseSetup.sh /home/hpc/ihpc/ihpc07/workspace
+workflow compile_run -p blur_FGCS17 -n PATUS --pin none

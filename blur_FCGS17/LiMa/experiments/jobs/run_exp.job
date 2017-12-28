@@ -1,0 +1,9 @@
+#PBS -N provajob-1
+#PBS -j oe
+#PBS -l nodes=1:ppn=24
+#PBS -l walltime=23:59:00
+#PBS -o /home/hpc/ihpc/ihpc07/workspace/blur_FGCS17/experiments/jobs/run_exp.out
+echo "JOB is going to be executed on:"
+hostname
+source /home/hpc/ihpc/ihpc07/PROVA/util/BaseSetup.sh /home/hpc/ihpc/ihpc07/workspace
+workflow run_exp -p blur_FGCS17 -e 5 -d "1024 1024" -m OpenMP PATUS PLUTO-pet --pin none node spread fill -t 1 2 4 6 8 12 16 24

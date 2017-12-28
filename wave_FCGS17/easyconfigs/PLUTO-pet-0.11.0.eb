@@ -1,0 +1,50 @@
+easyblock = 'ConfigureMake'
+
+name = 'PLUTO-pet'
+#this version of pluto is the development branch with pet. The tar has been produced after having typed the following commands:
+# $ git clone git://repo.or.cz/pluto.git -b pet
+# $ cd pluto/
+# $ git submodule init 
+# $ git submodule update
+# $ ./apply_patches.sh
+# $ ./autogen.sh
+version = '0.11.0'
+
+homepage = 'http://pluto-compiler.sourceforge.net/'
+description = """PLUTO is an automatic parallelization tool based on the polyhedral model. The polyhedral model for compiler 
+ optimization provides an abstraction to perform high-level transformations such as loop-nest optimization and parallelization 
+ on affine loop nests. Pluto transforms C programs from source to source for coarse-grained parallelism and data locality simultaneously. 
+ The core transformation framework mainly works by finding affine transformations for efficient tiling."""
+
+toolchain = {'name': 'dummy', 'version': ''}
+
+# compiler toolchain dependencies
+comp=('GCC','4.9.3-2.25')
+builddependencies = [
+     comp,
+     ('Clang', '3.4', '', comp),
+     ('pkg-config', '0.29', '', comp),
+     ('libyaml', '0.1.6', '', comp),
+     ('Autotools', '20161011', '', True),
+]
+
+sources = [SOURCE_TAR_GZ]
+#source_urls = ['http://sourceforge.net/projects/pluto-compiler/files/']
+preconfigopts = "git submodule init && git submodule update && ./apply_patches.sh && ./autogen.sh && "
+#preconfigopts += 'CPPFLAGS="-I$EBROOTCLANG/include $CPPFLAGS" LDFLAGS="-L$EBROOTCLANG/lib $LDFLAGS" '
+
+configopts = "CC=clang CXX=clang++"
+# --with-clang-prefix=$EBROOTCLANG --with-isl-prefix=$EBROOTISL"
+
+buildininstalldir = True
+
+runtest = "test"
+
+sanity_check_paths = {
+    'files': ["bin/polycc"],
+    'dirs': [],
+}
+
+maxparallel = 4
+
+moduleclass = 'devel'

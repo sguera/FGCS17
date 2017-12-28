@@ -1,0 +1,3426 @@
+========== Beginning of Epilogue Info Listing ==========
+
+
++++++ Running cat /proc/diskstats +++++
+   1       0 ram0 0 0 0 0 0 0 0 0 0 0 0
+   1       1 ram1 0 0 0 0 0 0 0 0 0 0 0
+   1       2 ram2 0 0 0 0 0 0 0 0 0 0 0
+   1       3 ram3 0 0 0 0 0 0 0 0 0 0 0
+   1       4 ram4 0 0 0 0 0 0 0 0 0 0 0
+   1       5 ram5 0 0 0 0 0 0 0 0 0 0 0
+   1       6 ram6 0 0 0 0 0 0 0 0 0 0 0
+   1       7 ram7 0 0 0 0 0 0 0 0 0 0 0
+   1       8 ram8 0 0 0 0 0 0 0 0 0 0 0
+   1       9 ram9 0 0 0 0 0 0 0 0 0 0 0
+   1      10 ram10 0 0 0 0 0 0 0 0 0 0 0
+   1      11 ram11 0 0 0 0 0 0 0 0 0 0 0
+   1      12 ram12 0 0 0 0 0 0 0 0 0 0 0
+   1      13 ram13 0 0 0 0 0 0 0 0 0 0 0
+   1      14 ram14 0 0 0 0 0 0 0 0 0 0 0
+   1      15 ram15 0 0 0 0 0 0 0 0 0 0 0
+   7       0 loop0 0 0 0 0 0 0 0 0 0 0 0
+   7       1 loop1 0 0 0 0 0 0 0 0 0 0 0
+   7       2 loop2 0 0 0 0 0 0 0 0 0 0 0
+   7       3 loop3 0 0 0 0 0 0 0 0 0 0 0
+   7       4 loop4 0 0 0 0 0 0 0 0 0 0 0
+   7       5 loop5 0 0 0 0 0 0 0 0 0 0 0
+   7       6 loop6 0 0 0 0 0 0 0 0 0 0 0
+   7       7 loop7 0 0 0 0 0 0 0 0 0 0 0
+   8       0 sda 155061 6573 3889106 547284 2795029 2448120 64767928 36833904 0 16165696 37382740
+   8       1 sda1 153931 2177 3844922 541792 2763901 2448120 64767928 36824640 0 16157000 37367984
+   8       2 sda2 4 0 8 40 0 0 0 0 0 40 40
+   8       5 sda5 161 28 1512 1792 0 0 0 0 0 1792 1792
+
++++++ Running cat /proc/meminfo +++++
+MemTotal:       264139440 kB
+MemFree:        256628100 kB
+Buffers:          727144 kB
+Cached:          3875688 kB
+SwapCached:            0 kB
+Active:          3594704 kB
+Inactive:        1065888 kB
+Active(anon):      59336 kB
+Inactive(anon):      152 kB
+Active(file):    3535368 kB
+Inactive(file):  1065736 kB
+Unevictable:        1312 kB
+Mlocked:            1312 kB
+SwapTotal:      268415996 kB
+SwapFree:       268415996 kB
+Dirty:               152 kB
+Writeback:             0 kB
+AnonPages:         59700 kB
+Mapped:            24820 kB
+Shmem:               800 kB
+Slab:            1078496 kB
+SReclaimable:     983072 kB
+SUnreclaim:        95424 kB
+KernelStack:        4416 kB
+PageTables:         6780 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    400485716 kB
+Committed_AS:     401924 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      773452 kB
+VmallocChunk:   34156418732 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      2048 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      160320 kB
+DirectMap2M:    11356160 kB
+DirectMap1G:    256901120 kB
+
++++++ Running cat /proc/loadavg +++++
+1.31 1.07 0.67 1/475 27535
+
++++++ Running cat /proc/sched_debug +++++
+Sched Debug Version: v0.11, 3.13.0-135-generic #184-Ubuntu
+ktime                                   : 3720083721.023339
+sched_clk                               : 3716787689.387823
+cpu_clk                                 : 3716787689.387981
+jiffies                                 : 5224913227
+sched_clock_stable                      : 1
+
+sysctl_sched
+  .sysctl_sched_latency                    : 24.000000
+  .sysctl_sched_min_granularity            : 3.000000
+  .sysctl_sched_wakeup_granularity         : 4.000000
+  .sysctl_sched_child_runs_first           : 0
+  .sysctl_sched_features                   : 110203
+  .sysctl_sched_tunable_scaling            : 1 (logaritmic)
+
+cpu#0, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 21257696
+  .nr_load_updates               : 17857480
+  .nr_uninterruptible            : 196
+  .next_balance                  : 5224.913228
+  .curr->pid                     : 0
+  .clock                         : 3716787688.466587
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 9
+  .cpu_load[3]                   : 35
+  .cpu_load[4]                   : 57
+  .yld_count                     : 32234464
+  .sched_count                   : 84894340
+  .sched_goidle                  : 8748706
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 9943142
+  .ttwu_local                    : 7424599
+
+cfs_rq[0]:/autogroup-48414
+  .exec_clock                    : 51584.576807
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 51691.165383
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308932371.126568
+  .nr_spread_over                : 203
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 486
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787657.204598
+  .se->vruntime                  : 308984062.281472
+  .se->sum_exec_runtime          : 51584.576807
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.016790
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 1.107727
+  .se->statistics.wait_sum       : 45.175593
+  .se->statistics.wait_count     : 7097
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 22505
+  .se->avg.runnable_avg_period   : 47413
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604929
+
+cfs_rq[0]:/
+  .exec_clock                    : 35488512.825911
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 308984062.291951
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 0.000000
+  .nr_spread_over                : 617
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 520
+  .tg_load_contrib               : 520
+  .tg_runnable_contrib           : 492
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 23134
+  .avg->runnable_avg_period      : 48090
+
+rt_rq[0]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     ksoftirqd/0     3 308979397.959357    380535   120 308979397.959357      4747.111361 3716776149.672454 0 /
+    kworker/0:0H     5  27361144.270502         4   100  27361144.270502         0.010099 2491018024.633865 0 /
+       rcu_sched     8 308984050.595877  42084056   120 308984050.595877   1024113.842213 3715472397.831536 0 /
+          rcu_bh    41       225.079758         2   120       225.079758         0.001818         0.001793 0 /
+         rcuob/0    42       227.081067         2   120       227.081067         0.002186         0.001914 0 /
+         rcuob/1    43       229.082069         2   120       229.082069         0.002209         0.001885 0 /
+         rcuob/2    44       231.083048         2   120       231.083048         0.001834         0.001858 0 /
+         rcuob/3    45       233.083972         2   120       233.083972         0.001771         0.001907 0 /
+         rcuob/4    46       235.085064         2   120       235.085064         0.001944         0.002005 0 /
+         rcuob/5    47       237.085959         2   120       237.085959         0.001904         0.001965 0 /
+         rcuob/6    48       239.086948         2   120       239.086948         0.001861         0.001952 0 /
+         rcuob/7    49       241.087945         2   120       241.087945         0.001857         0.001850 0 /
+         rcuob/8    50       243.088902         2   120       243.088902         0.001869         0.001975 0 /
+         rcuob/9    51       245.089891         2   120       245.089891         0.001893         0.001914 0 /
+        rcuob/10    52       247.090842         2   120       247.090842         0.001895         0.001962 0 /
+        rcuob/11    53       249.091803         2   120       249.091803         0.001896         0.001889 0 /
+        rcuob/12    54       251.092927         2   120       251.092927         0.002021         0.001889 0 /
+        rcuob/13    55       253.093697         2   120       253.093697         0.001896         0.001932 0 /
+        rcuob/14    56       255.094747         2   120       255.094747         0.001964         0.001879 0 /
+        rcuob/15    57       257.095670         2   120       257.095670         0.001883         0.002004 0 /
+        rcuob/16    58       259.096661         2   120       259.096661         0.001898         0.001948 0 /
+        rcuob/17    59       261.097640         2   120       261.097640         0.001897         0.001899 0 /
+        rcuob/18    60       263.098598         2   120       263.098598         0.001911         0.001914 0 /
+        rcuob/19    61       265.099664         2   120       265.099664         0.001994         0.001919 0 /
+        rcuob/20    62       267.100634         2   120       267.100634         0.001954         0.002023 0 /
+        rcuob/21    63       269.101595         2   120       269.101595         0.001911         0.001967 0 /
+        rcuob/22    64       271.102578         2   120       271.102578         0.001905         0.001864 0 /
+        rcuob/23    65       273.103531         2   120       273.103531         0.001915         0.001909 0 /
+        rcuob/24    66       275.104495         2   120       275.104495         0.001897         0.001844 0 /
+        rcuob/25    67       277.105476         2   120       277.105476         0.001906         0.001885 0 /
+        rcuob/26    68       279.106477         2   120       279.106477         0.001936         0.001926 0 /
+        rcuob/27    69       281.107552         2   120       281.107552         0.002007         0.001880 0 /
+        rcuob/28    70       283.108528         2   120       283.108528         0.001895         0.001939 0 /
+        rcuob/29    71       285.109851         2   120       285.109851         0.002244         0.001863 0 /
+        rcuob/30    72       287.110445         2   120       287.110445         0.001908         0.001932 0 /
+        rcuob/31    73       289.111428         2   120       289.111428         0.001916         0.001939 0 /
+     migration/0    74         0.000000    144362     0         0.000000      2361.327369         0.001950 0 /
+      watchdog/0    75         0.000000    930023     0         0.000000     14643.021832         0.002229 0 /
+         kswapd0   254      1929.526938         4   120      1929.526938         0.053922       100.352669 0 /
+     kworker/0:1   279      9026.614872       478   120      9026.614872        34.707409     33867.017512 0 /
+       scsi_eh_2   398      8196.251907        22   120      8196.251907         8.434366     14354.873890 0 /
+ upstart-udev-br   634        30.660368      6809   120        30.660368       779.117741 3700195164.964850 0 /autogroup-66
+           acpid  1805         0.395535         7   120         0.395535         1.445855       188.008181 0 /autogroup-255
+          dsmcad  2226        47.522509        42   120        47.522509        51.298784       372.337475 0 /autogroup-267
+     kworker/0:2  2725 308984050.317995   2861152   120 308984050.317995    618913.497684 3716086652.278315 0 /
+
+cpu#1, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8762524
+  .nr_load_updates               : 9752322
+  .nr_uninterruptible            : 93
+  .next_balance                  : 5224.913255
+  .curr->pid                     : 0
+  .clock                         : 3716787653.786736
+  .cpu_load[0]                   : 127
+  .cpu_load[1]                   : 127
+  .cpu_load[2]                   : 127
+  .cpu_load[3]                   : 126
+  .cpu_load[4]                   : 112
+  .yld_count                     : 28015179
+  .sched_count                   : 33478546
+  .sched_goidle                  : 2431949
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 2549999
+  .ttwu_local                    : 1434972
+
+cfs_rq[1]:/autogroup-48414
+  .exec_clock                    : 20142.906160
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 21191.194125
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308962871.097826
+  .nr_spread_over                : 97
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 926
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787653.675146
+  .se->vruntime                  : 271615466.628250
+  .se->sum_exec_runtime          : 20142.906160
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.015793
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.048409
+  .se->statistics.wait_sum       : 3.678988
+  .se->statistics.wait_count     : 1586
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 43501
+  .se->avg.runnable_avg_period   : 48058
+  .se->avg.load_avg_contrib      : 127
+  .se->avg.decay_count           : 3544604925
+
+cfs_rq[1]:/
+  .exec_clock                    : 18277806.227501
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 271615466.739840
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -37368595.552111
+  .nr_spread_over                : 483
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 1150
+  .tg_load_contrib               : 1150
+  .tg_runnable_contrib           : 924
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 43032
+  .avg->runnable_avg_period      : 47497
+
+rt_rq[1]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/1    76        -2.978498    930024     0        -2.978498      7818.394163         0.002484 0 /
+     migration/1    77         0.000000     28300     0         0.000000       802.617074         0.001955 0 /
+     ksoftirqd/1    78 268525206.659932      1680   120 268525206.659932        36.804463 3712575637.495888 0 /
+     kworker/1:0    79 271610959.396469    290971   120 271610959.396469      4437.530807 3716773722.490533 0 /
+    kworker/1:0H    80  12114755.572103         5   100  12114755.572103         0.018326 2491018009.582138 0 /
+     kworker/1:1   282        -1.046784         2   120        -1.046784         0.593152         0.548392 0 /
+
+cpu#2, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 27303027
+  .nr_load_updates               : 18532185
+  .nr_uninterruptible            : 1912
+  .next_balance                  : 5224.912953
+  .curr->pid                     : 0
+  .clock                         : 3716787676.621827
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 1
+  .cpu_load[2]                   : 21
+  .cpu_load[3]                   : 55
+  .cpu_load[4]                   : 74
+  .yld_count                     : 22833296
+  .sched_count                   : 1217646918
+  .sched_goidle                  : 9788195
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 13673588
+  .ttwu_local                    : 11823095
+
+cfs_rq[2]:/autogroup-48414
+  .exec_clock                    : 15825.716602
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 16485.149241
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308967577.142710
+  .nr_spread_over                : 80
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 593
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787653.677061
+  .se->vruntime                  : 410095802.038320
+  .se->sum_exec_runtime          : 15825.716602
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.023079
+  .se->statistics.slice_max      : 0.408871
+  .se->statistics.wait_max       : 0.653337
+  .se->statistics.wait_sum       : 9.565398
+  .se->statistics.wait_count     : 4522
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 27060
+  .se->avg.runnable_avg_period   : 46669
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604925
+
+cfs_rq[2]:/
+  .exec_clock                    : 19190891.214996
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 410095802.166958
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 101111739.875007
+  .nr_spread_over                : 1337
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 644
+  .tg_load_contrib               : 644
+  .tg_runnable_contrib           : 584
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 27097
+  .avg->runnable_avg_period      : 47408
+
+rt_rq[2]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+         rcuos/1    10 410095790.189950     49346   120 410095790.189950      2582.738432 3716784524.533833 0 /
+         rcuos/2    11 410095790.249226    102723   120 410095790.249226      5498.494925 3716781519.740596 0 /
+         rcuos/3    12 410095790.301575    463108   120 410095790.301575     27843.945796 3716759296.224645 0 /
+      watchdog/2    81        -5.970753    930023     0        -5.970753     13924.076527         0.002922 0 /
+     migration/2    82         0.000000     60781     0         0.000000      3136.960446         0.002113 0 /
+     ksoftirqd/2    83 410091949.895214   3722339   120 410091949.895214     28619.181501 3716733339.904691 0 /
+     kworker/2:0    84 410091949.907081   3827848   120 410091949.907081     42894.882834 3716678450.937206 0 /
+    kworker/2:0H    85 153882607.740479         5   100 153882607.740479         0.013264 2491017996.349991 0 /
+     kworker/2:1   293       -13.044220         2   120       -13.044220         0.016573         0.416944 0 /
+          kipmi0  2433 410094487.348776   9544606   139 410094487.348776  15728452.838825 3700943060.640529 0 /
+   kworker/u65:2 28264 410091315.510217     13168   120 410091315.510217      1310.422374 134096781.275360 0 /
+
+cpu#3, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 14452298
+  .nr_load_updates               : 16060652
+  .nr_uninterruptible            : 20779
+  .next_balance                  : 5224.913236
+  .curr->pid                     : 0
+  .clock                         : 3716787686.269593
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 94
+  .cpu_load[2]                   : 79
+  .cpu_load[3]                   : 78
+  .cpu_load[4]                   : 85
+  .yld_count                     : 34322398
+  .sched_count                   : 45992730
+  .sched_goidle                  : 4636553
+  .avg_idle                      : 554625
+  .ttwu_count                    : 5431655
+  .ttwu_local                    : 3017565
+
+cfs_rq[3]:/autogroup-48414
+  .exec_clock                    : 50793.291269
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 113765.409200
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308870296.882751
+  .nr_spread_over                : 4005
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 595
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787686.260648
+  .se->vruntime                  : 314968101.967734
+  .se->sum_exec_runtime          : 50793.306354
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.015427
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.822831
+  .se->statistics.wait_sum       : 79.536278
+  .se->statistics.wait_count     : 74914
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 27495
+  .se->avg.runnable_avg_period   : 47479
+  .se->avg.load_avg_contrib      : 377
+  .se->avg.decay_count           : 3544604956
+
+cfs_rq[3]:/
+  .exec_clock                    : 36763087.039663
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 314968101.976285
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 5984039.684334
+  .nr_spread_over                : 726
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 3415
+  .tg_load_contrib               : 3415
+  .tg_runnable_contrib           : 560
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 25827
+  .avg->runnable_avg_period      : 46980
+
+rt_rq[3]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+         rcuos/6    15 314968075.721993    197638   120 314968075.721993     10179.543974 3716776866.065160 0 /
+      watchdog/3    86        -5.970960    930023     0        -5.970960      6128.623230         0.002301 0 /
+     migration/3    87         0.000000    275837     0         0.000000      3373.746957         0.001888 0 /
+     ksoftirqd/3    88 314964369.872454      1770   120 314964369.872454        25.893833 3716786351.484309 0 /
+     kworker/3:0    89        -9.801204        20   120        -9.801204         0.249271      4243.529896 0 /
+    kworker/3:0H    90  12456870.440482         5   100  12456870.440482         0.012625 2491017983.101146 0 /
+     kworker/3:1   290 314968089.839696   1071747   120 314968089.839696     19791.513048 3716746570.278859 0 /
+          dsmcad  2227        11.218714         1   120        11.218714         0.267297         0.000000 0 /autogroup-267
+
+cpu#4, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 12321431
+  .nr_load_updates               : 13650497
+  .nr_uninterruptible            : 458
+  .next_balance                  : 5224.912953
+  .curr->pid                     : 0
+  .clock                         : 3716787686.736289
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 11
+  .cpu_load[3]                   : 42
+  .cpu_load[4]                   : 67
+  .yld_count                     : 27001055
+  .sched_count                   : 50435374
+  .sched_goidle                  : 4931495
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 4146814
+  .ttwu_local                    : 2719027
+
+cfs_rq[4]:/autogroup-48414
+  .exec_clock                    : 11934.854737
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 11551.144571
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308972511.147380
+  .nr_spread_over                : 367
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 836
+  .tg_load_contrib               : 836
+  .tg_runnable_contrib           : 564
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787686.734837
+  .se->vruntime                  : 248649577.873481
+  .se->sum_exec_runtime          : 11934.855920
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.084145
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.479935
+  .se->statistics.wait_sum       : 10.256622
+  .se->statistics.wait_count     : 13372
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 26471
+  .se->avg.runnable_avg_period   : 47607
+  .se->avg.load_avg_contrib      : 317
+  .se->avg.decay_count           : 3544604957
+
+cfs_rq[4]:/
+  .exec_clock                    : 18345335.066645
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 248649577.873481
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -60334484.418470
+  .nr_spread_over                : 472
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 812
+  .tg_load_contrib               : 812
+  .tg_runnable_contrib           : 494
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 23202
+  .avg->runnable_avg_period      : 47569
+
+rt_rq[4]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+         rcuos/0     9 248649562.908116    350292   120 248649562.908116     19429.499599 3716767279.958069 0 /
+         rcuos/7    16 248649562.294644    104770   120 248649562.294644      5980.585757 3716781142.324299 0 /
+      watchdog/4    91        -8.971007    930023     0        -8.971007      9232.671618         0.002182 0 /
+     migration/4    92         0.000000     56693     0         0.000000      1598.623949         0.001859 0 /
+     ksoftirqd/4    93 248599040.746053      1740   120 248599040.746053        22.803715 3716468663.980708 0 /
+     kworker/4:0    94        41.756061        15   120        41.756061         0.083997       745.702517 0 /
+    kworker/4:0H    95  14242166.926075         5   100  14242166.926075         0.015360 2491017969.858739 0 /
+     kworker/4:1   250 248644346.380135    568858   120 248644346.380135     10658.346674 3716755093.684122 0 /
+       rgmanager  1685         0.689071         2   119         0.689071         1.303173         0.011373 0 /autogroup-220
+           gdbus  2069         2.282732         4   120         2.282732         1.345783         0.727253 0 /autogroup-265
+          dsmcad  2232     27583.743571   3724284   120     27583.743571     99341.802368 3716655311.282121 0 /autogroup-267
+   kworker/u65:1  6838 131591743.358137      5514   120 131591743.358137       549.145031 1158254490.427777 0 /
+            bash 27529     11551.144571        26   120     11551.144571         6.794986        18.440343 0 /autogroup-48414
+
+cpu#5, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 17728848
+  .nr_load_updates               : 14282056
+  .nr_uninterruptible            : 140
+  .next_balance                  : 5224.912990
+  .curr->pid                     : 0
+  .clock                         : 3716787676.610156
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 1
+  .cpu_load[2]                   : 21
+  .cpu_load[3]                   : 55
+  .cpu_load[4]                   : 74
+  .yld_count                     : 27105723
+  .sched_count                   : 43647942
+  .sched_goidle                  : 5705229
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 9178132
+  .ttwu_local                    : 8534709
+
+cfs_rq[5]:/autogroup-48414
+  .exec_clock                    : 10307.084844
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 11006.923019
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308973055.368932
+  .nr_spread_over                : 52
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 579
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787653.678419
+  .se->vruntime                  : 221051516.188970
+  .se->sum_exec_runtime          : 10307.084844
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.043944
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.116038
+  .se->statistics.wait_sum       : 2.419925
+  .se->statistics.wait_count     : 1105
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 26638
+  .se->avg.runnable_avg_period   : 47090
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604925
+
+cfs_rq[5]:/
+  .exec_clock                    : 11773538.377967
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 221051516.309980
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -87932545.981971
+  .nr_spread_over                : 515
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 647
+  .tg_load_contrib               : 647
+  .tg_runnable_contrib           : 585
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 27145
+  .avg->runnable_avg_period      : 47391
+
+rt_rq[5]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+         rcuos/4    13 221051504.526515    275255   120 221051504.526515     17005.972415 3716769940.342950 0 /
+      watchdog/5    96        -8.972269    930023     0        -8.972269     13483.071473         0.002117 0 /
+     migration/5    97         0.000000     24590     0         0.000000       789.257059         0.001823 0 /
+     ksoftirqd/5    98 221046998.024229   3641092   120 221046998.024229     35095.464820 3716746826.854965 0 /
+     kworker/5:0    99       173.351561        20   120       173.351561         0.825834      3531.102775 0 /
+    kworker/5:0H   100  10246641.989690         5   100  10246641.989690         0.013153 2491017956.616676 0 /
+     kworker/5:1   278 221046998.041015   3728719   120 221046998.041015     36245.323171 3716662636.332404 0 /
+       kpsmoused   392       236.313809         2   100       236.313809         0.135735         0.520272 0 /
+            mlx4   393       236.312000         2   100       236.312000         0.040791         0.546050 0 /
+ upstart-file-br   689        13.118450      6681   120        13.118450       505.690994 3700195066.767415 0 /autogroup-102
+     edac-poller   889      2286.078623         2   100      2286.078623         0.142537         0.007734 0 /
+ upstart-socket-  1030        17.663412      3186   120        17.663412       292.717978 3700191894.625707 0 /autogroup-160
+
+cpu#6, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 11394331
+  .nr_load_updates               : 12873925
+  .nr_uninterruptible            : 143
+  .next_balance                  : 5224.913224
+  .curr->pid                     : 0
+  .clock                         : 3716787653.817693
+  .cpu_load[0]                   : 127
+  .cpu_load[1]                   : 127
+  .cpu_load[2]                   : 127
+  .cpu_load[3]                   : 126
+  .cpu_load[4]                   : 112
+  .yld_count                     : 28745971
+  .sched_count                   : 53661342
+  .sched_goidle                  : 4725778
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 4365727
+  .ttwu_local                    : 3290823
+
+cfs_rq[6]:/autogroup-48414
+  .exec_clock                    : 4405.457884
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 3898.004294
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308980164.287657
+  .nr_spread_over                : 272
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 923
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787653.673928
+  .se->vruntime                  : 233765785.174250
+  .se->sum_exec_runtime          : 4405.457884
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.010758
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.114500
+  .se->statistics.wait_sum       : 4.587989
+  .se->statistics.wait_count     : 3785
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 43203
+  .se->avg.runnable_avg_period   : 47521
+  .se->avg.load_avg_contrib      : 127
+  .se->avg.decay_count           : 3544604925
+
+cfs_rq[6]:/
+  .exec_clock                    : 13838581.124628
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 233765785.318015
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -75218276.973936
+  .nr_spread_over                : 493
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 1153
+  .tg_load_contrib               : 1153
+  .tg_runnable_contrib           : 923
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 42843
+  .avg->runnable_avg_period      : 47383
+
+rt_rq[6]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/6   101        -8.970006    930023     0        -8.970006      9759.489284         0.002106 0 /
+     migration/6   102         0.000000     50895     0         0.000000      1493.088693         0.001819 0 /
+     ksoftirqd/6   103 233750516.617290      1866   120 233750516.617290        20.335235 3716694424.217424 0 /
+     kworker/6:0   104        -8.350682        20   120        -8.350682         0.829856      4120.994104 0 /
+    kworker/6:0H   105  11204685.360272         5   100  11204685.360272         0.014565 2491017943.370074 0 /
+   kworker/u70:0   241 233748074.448371      1251   100 233748074.448371        27.617438 3716642128.601651 0 /
+     kworker/6:1   281 233761256.125719    454089   120 233761256.125719      8477.749054 3716754852.928637 0 /
+       scsi_eh_3   399      2399.495564        14   120      2399.495564        11.040936       323.392269 0 /
+   kworker/u70:1   426  82086839.414545       591   100  82086839.414545        12.685090 3642264046.764408 0 /
+        mountall   465         5.032012      6984   120         5.032012       542.273068 3700198003.898022 0 /autogroup-19
+           cupsd   935         0.129139       366   120         0.129139        64.807153 3700192795.464994 0 /autogroup-139
+       rpc.statd  1132         0.583990        34   120         0.583990        16.744428    319812.159607 0 /autogroup-168
+             atd  1772         0.263447      1036   120         0.263447        39.800406 3715505015.914547 0 /autogroup-248
+
+cpu#7, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 9275469
+  .nr_load_updates               : 11946115
+  .nr_uninterruptible            : 793
+  .next_balance                  : 5224.912990
+  .curr->pid                     : 0
+  .clock                         : 3716787676.635543
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 1
+  .cpu_load[2]                   : 21
+  .cpu_load[3]                   : 56
+  .cpu_load[4]                   : 74
+  .yld_count                     : 23534468
+  .sched_count                   : 30951858
+  .sched_goidle                  : 3332593
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 3148777
+  .ttwu_local                    : 2495315
+
+cfs_rq[7]:/autogroup-48414
+  .exec_clock                    : 1825.986145
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 1891.853783
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308982170.438168
+  .nr_spread_over                : 11
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 581
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787653.679772
+  .se->vruntime                  : 218622584.326415
+  .se->sum_exec_runtime          : 1825.986145
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.007684
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.053259
+  .se->statistics.wait_sum       : 1.766566
+  .se->statistics.wait_count     : 1286
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 26492
+  .se->avg.runnable_avg_period   : 46626
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604925
+
+cfs_rq[7]:/
+  .exec_clock                    : 13186905.652843
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 218622584.442363
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -90361477.849588
+  .nr_spread_over                : 458
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 639
+  .tg_load_contrib               : 639
+  .tg_runnable_contrib           : 585
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 27535
+  .avg->runnable_avg_period      : 48126
+
+rt_rq[7]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+         rcuos/5    14 218622572.791064     45317   120 218622572.791064      2387.555923 3716784694.354223 0 /
+      watchdog/7   106        -8.970675    930023     0        -8.970675      7755.118149         0.002133 0 /
+     migration/7   107         0.000000     24478     0         0.000000       698.441186         0.002128 0 /
+     ksoftirqd/7   108 218609467.116999      1344   120 218609467.116999        15.748693 3716312748.410865 0 /
+     kworker/7:0   109       -10.944683        20   120       -10.944683         0.241277      4190.021441 0 /
+    kworker/7:0H   110   8981365.287979         5   100   8981365.287979         0.012889 2491017930.133859 0 /
+     kworker/7:1   285 218618066.319469    316771   120 218618066.319469      6874.006592 3716759855.755403 0 /
+
+cpu#8, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 75221370
+  .nr_load_updates               : 37373090
+  .nr_uninterruptible            : -531412
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787689.156773
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 1
+  .cpu_load[4]                   : 16
+  .yld_count                     : 21634431
+  .sched_count                   : 714946715
+  .sched_goidle                  : 34831362
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 42316471
+  .ttwu_local                    : 29629790
+
+cfs_rq[8]:/autogroup-48288
+  .exec_clock                    : 132.163404
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 131.114828
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308983931.177123
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787659.952115
+  .se->vruntime                  : 376578799.288654
+  .se->sum_exec_runtime          : 132.163404
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 3.903555
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.041309
+  .se->statistics.wait_sum       : 0.064595
+  .se->statistics.wait_count     : 750
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 43
+  .se->avg.runnable_avg_period   : 46381
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604931
+
+cfs_rq[8]:/autogroup-48414
+  .exec_clock                    : 12667.273978
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 12232.181353
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308971830.110598
+  .nr_spread_over                : 855
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 30
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787662.578095
+  .se->vruntime                  : 376578812.386783
+  .se->sum_exec_runtime          : 12667.429379
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.016326
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.638573
+  .se->statistics.wait_sum       : 21.648691
+  .se->statistics.wait_count     : 106443
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 1380
+  .se->avg.runnable_avg_period   : 46752
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604934
+
+cfs_rq[8]:/
+  .exec_clock                    : 31164858.338007
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 376578812.386783
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 67594750.094832
+  .nr_spread_over                : 828
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 361
+  .tg_load_contrib               : 361
+  .tg_runnable_contrib           : 34
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 1609
+  .avg->runnable_avg_period      : 47522
+
+rt_rq[8]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/8   111       -11.960092    930023     0       -11.960092     13958.466362         0.002167 1 /
+     migration/8   112         0.000000    167281     0         0.000000      2865.721065         0.001881 1 /
+     ksoftirqd/8   113 376578618.696139     93931   120 376578618.696139       926.329501 3716778902.037451 1 /
+    kworker/8:0H   115  73556836.949136         4   100  73556836.949136         0.012005 2491017914.615865 1 /
+     kworker/8:1   280 376578800.588851   2455850   120 376578800.588851     52242.599279 3716683406.606642 1 /
+       scsi_eh_5   401      3030.225177        14   120      3030.225177         8.523505       348.912866 1 /
+     jbd2/sda1-8   427 376578483.345994   2054643   120 376578483.345994    119370.270062 3716651593.350184 1 /
+   kworker/u71:1   888 376480394.229795   1024406   100 376480394.229795     41665.291276 3713053442.473648 1 /
+          opensm  1540      1125.257168    372482   120      1125.257168      7774.058031 3716748941.966089 1 /autogroup-219
+         pbs_mom  2403    904865.052917   7784397   120    904865.052917    929545.405636 3715819643.463713 1 /autogroup-272
+   rs:main Q:Reg 29562      3319.956019     85431   120      3319.956019     18275.265804 1882721544.680662 1 /autogroup-21487
+     kworker/8:0 16677  83196793.816128         2   120  83196793.816128         0.093217         0.013720 1 /
+            sshd 11746      1129.709647     18945   120      1129.709647      1401.572731 256699731.471557 1 /autogroup-43016
+   kworker/u66:0 27769 376578618.721484     34717   120 376578618.721484      4158.872833 252099306.387795 1 /
+            sshd 23352       131.114828      2758   120       131.114828       405.398193   7621913.244156 1 /autogroup-48288
+            sshd  4354        28.963298        37   120        28.963298        29.066653      3702.973040 1 /autogroup-48356
+            sshd  4442        79.813889      1289   120        79.813889        57.199270   1406608.236180 1 /autogroup-48356
+            bash  7667         0.949275        21   120         0.949275         5.983480        35.104887 1 /autogroup-48414
+
+cpu#9, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8595760
+  .nr_load_updates               : 10762745
+  .nr_uninterruptible            : 570
+  .next_balance                  : 5224.912767
+  .curr->pid                     : 0
+  .clock                         : 3716787672.545262
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 26498892
+  .sched_count                   : 32275588
+  .sched_goidle                  : 2338645
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 2108903
+  .ttwu_local                    : 1318422
+
+cfs_rq[9]:/
+  .exec_clock                    : 13855461.948441
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 244901765.343955
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -64082296.947996
+  .nr_spread_over                : 396
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 2
+  .tg_load_contrib               : 2
+  .tg_runnable_contrib           : 1
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 57
+  .avg->runnable_avg_period      : 46628
+
+rt_rq[9]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/12    21 244901754.523699   3787174   120 244901754.523699    322016.511260 3716464826.066348 1 /
+      watchdog/9   117       -11.961401    930023     0       -11.961401      7813.512521         0.002359 1 /
+     migration/9   118         0.000000     26723     0         0.000000       903.035870         0.001895 1 /
+     ksoftirqd/9   119 239542229.045783       559   120 239542229.045783         7.563677 3712111311.860170 1 /
+     kworker/9:0   120 244901752.036369    283779   120 244901752.036369      5560.980859 3716772378.681010 1 /
+    kworker/9:0H   121   7703843.290479         4   100   7703843.290479         0.018088 2491017901.225560 1 /
+     kworker/9:1   284       -13.044942         2   120       -13.044942         0.020541         0.309728 1 /
+            sshd 23286        -2.661307       132   120        -2.661307        30.607572   7080594.309936 1 /autogroup-48288
+
+cpu#10, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 37914184
+  .nr_load_updates               : 24433815
+  .nr_uninterruptible            : 412418
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787659.682962
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 25473469
+  .sched_count                   : 528831198
+  .sched_goidle                  : 16570453
+  .avg_idle                      : 902757
+  .ttwu_count                    : 13492364
+  .ttwu_local                    : 5179532
+
+cfs_rq[10]:/autogroup-263
+  .exec_clock                    : 8809.801777
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 8688.485304
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308975373.806647
+  .nr_spread_over                : 528
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787644.011863
+  .se->vruntime                  : 301275141.887959
+  .se->sum_exec_runtime          : 8810.957195
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 3.995879
+  .se->statistics.slice_max      : 3.001776
+  .se->statistics.wait_max       : 0.114287
+  .se->statistics.wait_sum       : 11.803058
+  .se->statistics.wait_count     : 302037
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 9
+  .se->avg.runnable_avg_period   : 48048
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604916
+
+cfs_rq[10]:/autogroup-48414
+  .exec_clock                    : 5742.777285
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 5498.409743
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308978563.882208
+  .nr_spread_over                : 289
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 9
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787659.673013
+  .se->vruntime                  : 301275155.091967
+  .se->sum_exec_runtime          : 5742.777285
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.012736
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.266676
+  .se->statistics.wait_sum       : 7.385394
+  .se->statistics.wait_count     : 2917
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 438
+  .se->avg.runnable_avg_period   : 46646
+  .se->avg.load_avg_contrib      : 16
+  .se->avg.decay_count           : 3544604931
+
+cfs_rq[10]:/
+  .exec_clock                    : 17029616.942473
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 301275155.101376
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -7708907.190575
+  .nr_spread_over                : 3957
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 43
+  .tg_load_contrib               : 43
+  .tg_runnable_contrib           : 10
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 502
+  .avg->runnable_avg_period      : 47012
+
+rt_rq[10]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/15    24 301275141.928370    670965   120 301275141.928370     50496.508054 3716736398.332747 1 /
+     watchdog/10   122       -11.960627    930023     0       -11.960627     13527.574783         0.002067 1 /
+    migration/10   123         0.000000     68185     0         0.000000      1862.244470         0.001905 1 /
+    ksoftirqd/10   124 301263565.700578      9228   120 301263565.700578       102.674504 3716722465.456273 1 /
+    kworker/10:0   125 301275143.094366   1059577   120 301275143.094366     22483.410593 3716741774.594967 1 /
+   kworker/10:0H   126  53157687.461863         5   100  53157687.461863         0.028915 2491017887.885326 1 /
+   kworker/u71:0   242 301275127.618389    994090   100 301275127.618389     41190.598819 3716742057.511272 1 /
+       scsi_eh_4   400      2393.815764        14   120      2393.815764        10.273251       329.429746 1 /
+    cups-browsed  1302         6.377758       727   120         6.377758        77.870086 3715330136.754375 1 /autogroup-181
+            sshd  1768       116.078340     17850   120       116.078340      3417.396472 3716206018.971867 1 /autogroup-246
+      irqbalance  1861    226381.800965    376261   120    226381.800965    706266.743480 3716047126.049278 1 /autogroup-261
+           gmond  1960      8688.485304  37753772   120      8688.485304   1897114.224491 3714854570.934903 1 /autogroup-263
+          master  2361      5653.383474    215401   120      5653.383474     14782.478138 3716717350.032942 1 /autogroup-270
+ fail2ban-server  2638     52491.871260     94326   120     52491.871260     99028.862006 3716180988.705332 1 /autogroup-274
+      snmpcheckd  3047      1977.769360   1486324   120      1977.769360    140390.560093 3715144256.807550 1 /autogroup-305
+    kworker/10:1 19372  76572917.852836         3   120  76572917.852836         0.104969 571791929.574541 1 /
+
+cpu#11, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 15790725
+  .nr_load_updates               : 13879539
+  .nr_uninterruptible            : 12349
+  .next_balance                  : 5224.913107
+  .curr->pid                     : 0
+  .clock                         : 3716787686.894008
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 32488776
+  .sched_count                   : 43968985
+  .sched_goidle                  : 4539593
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 5662079
+  .ttwu_local                    : 2964381
+
+cfs_rq[11]:/autogroup-48414
+  .exec_clock                    : 32727.993127
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 81329.234589
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308902733.057362
+  .nr_spread_over                : 3430
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 12
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787686.886138
+  .se->vruntime                  : 290880300.376309
+  .se->sum_exec_runtime          : 32728.010058
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.026600
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.358567
+  .se->statistics.wait_sum       : 63.588987
+  .se->statistics.wait_count     : 60305
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 825
+  .se->avg.runnable_avg_period   : 47885
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604957
+
+cfs_rq[11]:/
+  .exec_clock                    : 25165942.378064
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 290880300.376309
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -18103761.915642
+  .nr_spread_over                : 530
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 19
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 885
+  .avg->runnable_avg_period      : 47192
+
+rt_rq[11]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+         rcuos/8    17 290880287.801687  11926596   120 290880287.801687    984373.206223 3715800979.783238 1 /
+     watchdog/11   127       -11.960769    930023     0       -11.960769      6410.317702         0.002146 1 /
+    migration/11   128         0.000000    187779     0         0.000000      2265.282589         0.002058 1 /
+    ksoftirqd/11   129 290880087.963876      1524   120 290880087.963876        15.202818 3716784807.582034 1 /
+   kworker/11:0H   131   9826643.065216         4   100   9826643.065216         0.027233 2491017874.515080 1 /
+         khelper   234        10.977934         2   100        10.977934         0.029546         0.020933 1 /
+           netns   236        35.144002         2   100        35.144002         0.018547         0.013984 1 /
+       writeback   237        47.161808         2   100        47.161808         0.019037         0.009703 1 /
+     kintegrityd   238        59.170451         2   100        59.170451         0.009899         0.007901 1 /
+          bioset   239        71.179168         2   100        71.179168         0.009859         0.007376 1 /
+   kworker/u69:0   240       119.209139         3   100       119.209139         0.010969         0.150191 1 /
+         kblockd   245       143.217216         2   100       143.217216         0.009209         0.007356 1 /
+         ata_sff   246       155.226687         2   100       155.226687         0.010540         0.012798 1 /
+              md   248       179.244419         2   100       179.244419         0.009243         0.012075 1 /
+      devfreq_wq   249       191.253169         2   100       191.253169         0.009820         0.008108 1 /
+         kswapd1   255       464.081420         3   120       464.081420         0.029296       100.329568 1 /
+            ksmd   259       283.425644         2   125       283.425644         0.021098         0.007234 1 /
+ ecryptfs-kthrea   262       319.689542         2   120       319.689542         0.027168         0.007703 1 /
+          crypto   263       331.707356         2   100       331.707356         0.019274         0.008872 1 /
+        kthrotld   275       476.068573         2   100       476.068573         0.019749         0.007479 1 /
+    kworker/11:1   288 290880274.426305    837786   120 290880274.426305     16468.097602 3716737430.048277 1 /
+ charger_manager   328       577.883368         2   100       577.883368         0.102042         0.015960 1 /
+       scsi_eh_0   394      4114.831535         4   120      4114.831535       118.875256       156.449496 1 /
+         mlx4_en   413      4175.895187         2   100      4175.895187         0.101221         0.022038 1 /
+ ext4-rsv-conver   428      4417.826540         2   100      4417.826540         0.100120         0.015694 1 /
+           getty  1733         1.027377        24   120         1.027377         2.853065        47.243197 1 /autogroup-226
+           getty  1742         0.460104         2   120         0.460104         2.155838         0.000000 1 /autogroup-232
+           getty  1744         0.417206         2   120         0.417206         2.118375         0.000000 1 /autogroup-234
+         kauditd  2745     10057.597205         2   120     10057.597205         0.100320         0.010999 1 /
+    kworker/11:0 13206   8022818.430219         2   120   8022818.430219         0.099116         0.014222 1 /
+        xfsalloc  7582   9826643.053120         2   100   9826643.053120         0.017117         0.018382 1 /
+   xfs_mru_cache  7583   9826655.065167         2   100   9826655.065167         0.013430         0.016120 1 /
+         xfslogd  7584   9826667.077068         2   100   9826667.077068         0.013256         0.015138 1 /
+           jfsIO  7592   9826679.103321         2   120   9826679.103321         0.026259         0.017548 1 /
+       jfsCommit  7593   9826691.117371         2   120   9826691.117371         0.014056         0.020639 1 /
+       jfsCommit  7594   9826703.129208         2   120   9826703.129208         0.011843         0.010694 1 /
+       jfsCommit  7595   9826715.142487         2   120   9826715.142487         0.013285         0.009575 1 /
+       jfsCommit  7596   9826727.152819         2   120   9826727.152819         0.010338         0.010337 1 /
+       jfsCommit  7597   9826739.162707         2   120   9826739.162707         0.009894         0.010020 1 /
+       jfsCommit  7598   9826751.173294         2   120   9826751.173294         0.010593         0.010438 1 /
+       jfsCommit  7599   9826763.184373         2   120   9826763.184373         0.011085         0.010216 1 /
+       jfsCommit  7600   9826775.194242         2   120   9826775.194242         0.009875         0.074799 1 /
+       jfsCommit  7601   9826787.205475         2   120   9826787.205475         0.011239         0.010066 1 /
+       jfsCommit  7602   9826799.217621         2   120   9826799.217621         0.012152         0.019256 1 /
+       jfsCommit  7603   9826811.228689         2   120   9826811.228689         0.011074         0.011528 1 /
+       jfsCommit  7604   9826823.239467         2   120   9826823.239467         0.010784         0.010277 1 /
+       jfsCommit  7605   9826835.248809         2   120   9826835.248809         0.009348         0.009872 1 /
+       jfsCommit  7606   9826847.261041         2   120   9826847.261041         0.012238         0.010342 1 /
+       jfsCommit  7607   9826859.271869         2   120   9826859.271869         0.010834         0.010169 1 /
+       jfsCommit  7608   9826871.282720         2   120   9826871.282720         0.010857         0.052444 1 /
+       jfsCommit  7609   9826883.292288         2   120   9826883.292288         0.009574         0.009987 1 /
+       jfsCommit  7610   9826895.302992         2   120   9826895.302992         0.010710         0.012854 1 /
+       jfsCommit  7611   9826907.314117         2   120   9826907.314117         0.011131         0.011610 1 /
+       jfsCommit  7612   9826919.325000         2   120   9826919.325000         0.010889         0.016165 1 /
+       jfsCommit  7613   9826931.336133         2   120   9826931.336133         0.011139         0.010007 1 /
+       jfsCommit  7614   9826943.345479         2   120   9826943.345479         0.009352         0.010664 1 /
+       jfsCommit  7615   9826955.355881         2   120   9826955.355881         0.010408         0.010036 1 /
+       jfsCommit  7616   9826967.367364         2   120   9826967.367364         0.011489         0.012215 1 /
+       jfsCommit  7617   9826979.378280         2   120   9826979.378280         0.010922         0.011718 1 /
+       jfsCommit  7618   9826991.387868         2   120   9826991.387868         0.009594         0.009993 1 /
+       jfsCommit  7619   9827003.398628         2   120   9827003.398628         0.010766         0.011762 1 /
+       jfsCommit  7620   9827015.409089         2   120   9827015.409089         0.010467         0.011385 1 /
+       jfsCommit  7621   9827027.420221         2   120   9827027.420221         0.011138         0.012503 1 /
+       jfsCommit  7622   9827039.431142         2   120   9827039.431142         0.010927         0.014875 1 /
+       jfsCommit  7623   9827051.440385         2   120   9827051.440385         0.009249         0.010499 1 /
+       jfsCommit  7624   9827063.450055         2   120   9827063.450055         0.009676         0.010365 1 /
+         jfsSync  7625   9827075.461039         2   120   9827075.461039         0.010990         0.010655 1 /
+
+cpu#12, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 25251692
+  .nr_load_updates               : 18349719
+  .nr_uninterruptible            : 89744
+  .next_balance                  : 5224.913250
+  .curr->pid                     : 0
+  .clock                         : 3716787684.668898
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 3
+  .cpu_load[3]                   : 3
+  .cpu_load[4]                   : 2
+  .yld_count                     : 26492261
+  .sched_count                   : 428132986
+  .sched_goidle                  : 10169179
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 10511116
+  .ttwu_local                    : 5460414
+
+cfs_rq[12]:/autogroup-48414
+  .exec_clock                    : 11006.210846
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 10376.265695
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308973686.026256
+  .nr_spread_over                : 510
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 47
+  .tg_load_contrib               : 47
+  .tg_runnable_contrib           : 12
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787660.637822
+  .se->vruntime                  : 293255341.288946
+  .se->sum_exec_runtime          : 11006.279411
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.087404
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.361200
+  .se->statistics.wait_sum       : 11.076128
+  .se->statistics.wait_count     : 9454
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 563
+  .se->avg.runnable_avg_period   : 46628
+  .se->avg.load_avg_contrib      : 17
+  .se->avg.decay_count           : 3544604932
+
+cfs_rq[12]:/
+  .exec_clock                    : 17031868.892220
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 293255341.288946
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -15728721.003005
+  .nr_spread_over                : 1267
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 14
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 659
+  .avg->runnable_avg_period      : 47200
+
+rt_rq[12]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/14    23 293255329.361846   2822318   120 293255329.361846    239404.153689 3716547360.578537 1 /
+     watchdog/12   132       -11.960096    930023     0       -11.960096     12791.685546         0.002020 1 /
+    migration/12   133         0.000000     65477     0         0.000000      2095.582329         0.001951 1 /
+    ksoftirqd/12   134 293246597.809343      4669   120 293246597.809343        43.083258 3716699301.822029 1 /
+   kworker/12:0H   136  42461575.493960         4   100  42461575.493960         0.018857 2491017861.178692 1 /
+      khungtaskd   253 293247517.119904     31002   120 293247517.119904      3757.433888 3716700042.002024 1 /
+    kworker/12:1   277 293255327.374689    926611   120 293255327.374689     20173.835224 3716742272.157174 1 /
+      rpc.idmapd   736         0.171303        39   120         0.171303         6.845500   2956868.700095 1 /autogroup-109
+     dbus-daemon   759        40.627565      8324   120        40.627565       577.668517 3715333066.353952 1 /autogroup-119
+           getty  1724         0.436035        26   120         0.436035         2.915060        66.067716 1 /autogroup-222
+            qmgr  2377      6178.359252     23477   120      6178.359252      5149.078479 3716507876.375362 1 /autogroup-270
+     nfsv4.0-svc  3249    225169.877364         2   120    225169.877364         0.108815         0.024144 1 /
+    kworker/12:2 15790  51368115.139409         3   120  51368115.139409         0.178039 673564949.089376 1 /
+            sshd 11680         2.034758        49   120         2.034758        19.444597       531.429220 1 /autogroup-43016
+            bash 11747       536.903264      5428   120       536.903264      1877.916365 256099771.119962 1 /autogroup-43017
+          pickup  3679      6188.883200       108   120      6188.883200        21.820519   5819417.838897 1 /autogroup-270
+            bash 26544     10367.233964       150   120     10367.233964        89.477235     20475.383382 1 /autogroup-48414
+
+cpu#13, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 9409473
+  .nr_load_updates               : 10829242
+  .nr_uninterruptible            : 338
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787684.668883
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 28339468
+  .sched_count                   : 34227625
+  .sched_goidle                  : 2444580
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 2247265
+  .ttwu_local                    : 1424551
+
+cfs_rq[13]:/
+  .exec_clock                    : 12882590.865177
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 229227532.921907
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -79756529.370044
+  .nr_spread_over                : 539
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 3
+  .tg_load_contrib               : 3
+  .tg_runnable_contrib           : 3
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 179
+  .avg->runnable_avg_period      : 47205
+
+rt_rq[13]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+         rcuos/9    18 229227520.957647     77665   120 229227520.957647      4061.251994 3716782656.517296 1 /
+        rcuos/11    20 229227522.432553    717396   120 229227522.432553     55101.930055 3716731978.511338 1 /
+     watchdog/13   137       -11.960404    930023     0       -11.960404      7413.872972         0.002032 1 /
+    migration/13   138         0.000000     26758     0         0.000000       925.975699         0.001936 1 /
+    ksoftirqd/13   139 229175319.163179       591   120 229175319.163179         8.378969 3716192142.499015 1 /
+   kworker/13:0H   141   4505774.496543         5   100   4505774.496543         0.019961 2491017847.842677 1 /
+    kworker/13:1   286 229227484.192040    281493   120 229227484.192040      6396.509370 3716759867.586098 1 /
+    kworker/13:2 12336    164798.854046         2   120    164798.854046         0.011354         0.024836 1 /
+
+cpu#14, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 30939431
+  .nr_load_updates               : 22225630
+  .nr_uninterruptible            : 4923
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787684.601891
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 28678861
+  .sched_count                   : 457437703
+  .sched_goidle                  : 13368687
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 13699586
+  .ttwu_local                    : 8443051
+
+cfs_rq[14]:/
+  .exec_clock                    : 19695328.231320
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 297396022.858313
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -11588039.433638
+  .nr_spread_over                : 2828
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 4
+  .tg_load_contrib               : 4
+  .tg_runnable_contrib           : 2
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 125
+  .avg->runnable_avg_period      : 46643
+
+rt_rq[14]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/10    19 297396011.120835   2150583   120 297396011.120835    188093.866312 3716598858.107204 1 /
+     watchdog/14   142       -11.960671    930023     0       -11.960671     13108.319846         0.002064 1 /
+    migration/14   143         0.000000    184720     0         0.000000      2910.721243         0.002029 1 /
+    ksoftirqd/14   144 297384225.857014      9980   120 297384225.857014        96.276372 3716729208.424176 1 /
+   kworker/14:0H   146  40580817.993726         4   100  40580817.993726         0.019541 2491017834.476234 1 /
+       scsi_eh_1   395      5340.235898         4   120      5340.235898       241.560537       158.241868 1 /
+  systemd-logind   895        43.064252       329   120        43.064252       250.902841 3715332219.139191 1 /autogroup-132
+       rgmanager  1687     57830.329926   3735226   119     57830.329926    291219.923646 3716466409.088567 1 /autogroup-220
+    kworker/14:0 24811 297396008.250323    603211   120 297396008.250323     12963.501480 1983724782.197381 1 /
+     in:imuxsock 29560      5083.356730     85059   120      5083.356730      9172.137765 1882730545.671547 1 /autogroup-21487
+   kworker/u66:2  1292 291758065.468213       844   120 291758065.468213        42.733168 1123076879.262115 1 /
+    kworker/14:2  6169  48078186.860716         2   120  48078186.860716         0.012307         0.015842 1 /
+
+cpu#15, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 24196038
+  .nr_load_updates               : 18378738
+  .nr_uninterruptible            : 1060
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.508787
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 26689528
+  .sched_count                   : 47801557
+  .sched_goidle                  : 10010796
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 9854452
+  .ttwu_local                    : 8556974
+
+cfs_rq[15]:/
+  .exec_clock                    : 12428176.773931
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 216635134.642760
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -92348927.649191
+  .nr_spread_over                : 541
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 1
+  .avg->runnable_avg_period      : 47115
+
+rt_rq[15]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/13    22 216635124.183807    283497   120 216635124.183807     21907.348963 3716765028.939405 1 /
+     watchdog/15   147       -11.960499    930024     0       -11.960499      9179.270569         0.002027 1 /
+    migration/15   148         0.000000     34819     0         0.000000       877.535068         0.001946 1 /
+    ksoftirqd/15   149 216625863.291920      6001   120 216625863.291920        63.999333 3716748531.924631 1 /
+    kworker/15:0   150        -8.806502        20   120        -8.806502         0.244425      4083.314243 1 /
+   kworker/15:0H   151   2339219.112807         4   100   2339219.112807         0.017264 2491017821.126866 1 /
+    kworker/15:1   292 216632844.788098    416186   120 216632844.788098      9888.190878 3716749420.936001 1 /
+
+cpu#16, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 30734278
+  .nr_load_updates               : 21012493
+  .nr_uninterruptible            : 379
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787684.732018
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 27822593
+  .sched_count                   : 913717967
+  .sched_goidle                  : 14075392
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 16980992
+  .ttwu_local                    : 10021758
+
+cfs_rq[16]:/autogroup-48414
+  .exec_clock                    : 15659.590496
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 15892.956511
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308968169.335440
+  .nr_spread_over                : 58
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787507.217921
+  .se->vruntime                  : 409437874.618179
+  .se->sum_exec_runtime          : 15659.593250
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.015385
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.457827
+  .se->statistics.wait_sum       : 4.970930
+  .se->statistics.wait_count     : 4237
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 2
+  .se->avg.runnable_avg_period   : 47552
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604786
+
+cfs_rq[16]:/
+  .exec_clock                    : 28643618.965312
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 409437874.618179
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 100453812.326228
+  .nr_spread_over                : 1232
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 1
+  .tg_load_contrib               : 1
+  .tg_runnable_contrib           : 2
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 107
+  .avg->runnable_avg_period      : 47710
+
+rt_rq[16]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/23    32 409437862.797126     79991   120 409437862.797126      4148.690644 3716783113.851253 2 /
+     watchdog/16   152       -11.956126    930023     0       -11.956126     12816.893799         0.002030 2 /
+    migration/16   153         0.000000    296281     0         0.000000      4046.748501         0.001892 2 /
+    ksoftirqd/16   154 409412806.144258      9620   120 409412806.144258       159.613449 3716702990.954155 2 /
+    kworker/16:0   155       -12.762140        20   120       -12.762140         0.288266      4070.338784 2 /
+   kworker/16:0H   156  74761623.721640         5   100  74761623.721640         0.018574 2491017808.956539 2 /
+         kswapd2   256         0.987241         4   120         0.987241         0.058605       100.262996 2 /
+   fsnotify_mark   261 115986620.651758        49   120 115986620.651758         1.612838 3354049578.561166 2 /
+    kworker/16:1   299 409437857.590972   1621603   120 409437857.590972     33255.433576 3716719272.422278 2 /
+          opensm  1551     10152.956403    372346   120     10152.956403     12110.988971 3716741219.243480 2 /autogroup-219
+          opensm  1560     10152.961559     85910   120     10152.961559      4802.563050 3716748518.044217 2 /autogroup-219
+          opensm  1561     10154.549291     85975   120     10154.549291      4844.663122 3716728492.040106 2 /autogroup-219
+          opensm  1566     10152.798595     85799   120     10152.798595      4775.866751 3716736541.677966 2 /autogroup-219
+          opensm  1567     10152.792059     85877   120     10152.792059      4828.781273 3716728187.278899 2 /autogroup-219
+          opensm  1573     10152.753943     85883   120     10152.753943      4744.687358 3716718600.691946 2 /autogroup-219
+          opensm  1578     10152.759624     85870   120     10152.759624      4809.716130 3716728526.401881 2 /autogroup-219
+          opensm  1579     10152.798353     85854   120     10152.798353      4839.017050 3716716492.692385 2 /autogroup-219
+          opensm  1580     10152.758473     85784   120     10152.758473      4849.278852 3716738477.681956 2 /autogroup-219
+          opensm  1581     10152.751547     85849   120     10152.751547      4874.615873 3716718470.811562 2 /autogroup-219
+          opensm  1582     10152.758287     85953   120     10152.758287      4749.037160 3716738578.925390 2 /autogroup-219
+          opensm  1583     10152.774622     85912   120     10152.774622      4818.796590 3716716677.264224 2 /autogroup-219
+          opensm  1584     10152.752842     85786   120     10152.752842      4750.225704 3716708604.785319 2 /autogroup-219
+          opensm  1587     10152.760561     85845   120     10152.760561      4794.110766 3716718550.471627 2 /autogroup-219
+            cron  1773       602.268177     71402   120       602.268177      6354.755209 3716699481.277338 2 /autogroup-249
+           gmond  1864    107412.806178   1705012   120    107412.806178    474027.989285 3716273500.823344 2 /autogroup-263
+   kworker/u64:1  8033 409417235.715232       771   120 409417235.715232        42.829488    441487.874830 2 /
+
+cpu#17, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8399465
+  .nr_load_updates               : 11126803
+  .nr_uninterruptible            : 95
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.512339
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 26968556
+  .sched_count                   : 34511961
+  .sched_goidle                  : 3078035
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 3009185
+  .ttwu_local                    : 1342811
+
+cfs_rq[17]:/
+  .exec_clock                    : 12800208.576005
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 234072828.083392
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -74911234.208559
+  .nr_spread_over                : 442
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 3
+  .avg->runnable_avg_period      : 47265
+
+rt_rq[17]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/18    27 234072816.135226     93346   120 234072816.135226      5156.828834 3716781931.045453 2 /
+     watchdog/17   158       -11.959017    930023     0       -11.959017      9223.575167         0.001978 2 /
+    migration/17   159         0.000000     24775     0         0.000000       785.924183         0.002252 2 /
+    ksoftirqd/17   160 234064268.182521      1019   120 234064268.182521        12.774499 3716717609.784370 2 /
+    kworker/17:0   161        -8.768025        20   120        -8.768025         0.282970      3962.403351 2 /
+   kworker/17:0H   162    749793.375398         5   100    749793.375398         0.017290 2491017699.749753 2 /
+    kworker/17:1   298 234072812.173970    283479   120 234072812.173970      6561.226953 3716754276.043066 2 /
+          bioset  7644    749805.383315         2   100    749805.383315         0.022868         0.053439 2 /
+
+cpu#18, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 19520959
+  .nr_load_updates               : 16077331
+  .nr_uninterruptible            : 38
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787676.677618
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 19514680
+  .sched_count                   : 908569410
+  .sched_goidle                  : 8842220
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 7724237
+  .ttwu_local                    : 3743470
+
+cfs_rq[18]:/
+  .exec_clock                    : 15854426.473103
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 353401158.911043
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 44417096.619092
+  .nr_spread_over                : 1016
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 1
+  .tg_load_contrib               : 1
+  .tg_runnable_contrib           : 1
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 61
+  .avg->runnable_avg_period      : 46106
+
+rt_rq[18]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        kthreadd     2 353394139.232629      1709   120 353394139.232629       131.269226 3716714231.497774 2 /
+        rcuos/22    31 353401147.001413    193406   120 353401147.001413      9628.045905 3716777625.910909 2 /
+     watchdog/18   163       -11.956967    930023     0       -11.956967     12124.806118         0.002035 2 /
+    migration/18   164         0.000000     52328     0         0.000000      1614.512121         0.001905 2 /
+    ksoftirqd/18   165 351553428.678741      1840   120 351553428.678741        22.895069 3712677673.925810 2 /
+    kworker/18:0   166 353401143.433958   1520123   120 353401143.433958     32331.759865 3716727450.689948 2 /
+   kworker/18:0H   167  73528234.313795         4   100  73528234.313795         0.017195 2491017686.377475 2 /
+    kworker/18:1   289       -13.001752         2   120       -13.001752         0.058294         0.110281 2 /
+        rpc.gssd   744         0.479918       126   120         0.479918        49.466542   2956757.745010 2 /autogroup-114
+          opensm  1559     30026.099140     85808   120     30026.099140      4747.419720 3716728590.795175 2 /autogroup-219
+          opensm  1563     30026.230376     85746   120     30026.230376      4802.099741 3716738202.791998 2 /autogroup-219
+          opensm  1569     30026.090980     85795   120     30026.090980      4798.806944 3716738530.377297 2 /autogroup-219
+          opensm  1574     30026.132345     85846   120     30026.132345      4772.134981 3716746534.104814 2 /autogroup-219
+   kworker/u64:2  6261 353401147.023203      1463   120 353401147.023203        79.353176    859231.535292 2 /
+
+cpu#19, 2200.105 MHz
+  .nr_running                    : 1
+  .load                          : 382
+  .nr_switches                   : 15717890
+  .nr_load_updates               : 13301989
+  .nr_uninterruptible            : 14758
+  .next_balance                  : 5224.913250
+  .curr->pid                     : 27536
+  .clock                         : 3716787689.323737
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 107
+  .cpu_load[2]                   : 102
+  .cpu_load[3]                   : 70
+  .cpu_load[4]                   : 40
+  .yld_count                     : 37704891
+  .sched_count                   : 54441503
+  .sched_goidle                  : 6436858
+  .avg_idle                      : 633333
+  .ttwu_count                    : 6777955
+  .ttwu_local                    : 4430908
+
+cfs_rq[19]:/autogroup-48414
+  .exec_clock                    : 261763.327972
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 326587.624173
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308657474.667778
+  .nr_spread_over                : 3273
+  .nr_running                    : 1
+  .load                          : 1024
+  .runnable_load_avg             : 974
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 1001
+  .tg_runnable_contrib           : 136
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787689.323737
+  .se->vruntime                  : 260592001.969083
+  .se->sum_exec_runtime          : 261763.344567
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.017261
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.949243
+  .se->statistics.wait_sum       : 133.175423
+  .se->statistics.wait_count     : 138540
+  .se->load.weight               : 382
+  .se->avg.runnable_avg_sum      : 6213
+  .se->avg.runnable_avg_period   : 46616
+  .se->avg.load_avg_contrib      : 377
+  .se->avg.decay_count           : 3544604959
+
+cfs_rq[19]:/
+  .exec_clock                    : 19796829.128040
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 260592001.969083
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -48392060.322868
+  .nr_spread_over                : 517
+  .nr_running                    : 1
+  .load                          : 382
+  .runnable_load_avg             : 377
+  .blocked_load_avg              : 1603
+  .tg_load_contrib               : 1985
+  .tg_runnable_contrib           : 144
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 6701
+  .avg->runnable_avg_period      : 47814
+
+rt_rq[19]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/16    25 260591961.137956    403412   120 260591961.137956     26934.568958 3716759934.710132 2 /
+     watchdog/19   168       -11.957662    930023     0       -11.957662      7787.572631         0.002178 2 /
+    migration/19   169         0.000000    268364     0         0.000000      3238.048498         0.001862 2 /
+    ksoftirqd/19   170 260562437.155640      1669   120 260562437.155640        19.146760 3716768840.610123 2 /
+    kworker/19:0   171      2760.844177        20   120      2760.844177         0.287804      6598.300870 2 /
+   kworker/19:0H   172   2110700.154985         5   100   2110700.154985         0.015400 2491017673.042131 2 /
+          vmstat   258      2760.834469         4   100      2760.834469         0.034732      4626.951266 2 /
+    kworker/19:1   287 260591989.992794   2562604   120 260591989.992794     41340.188798 3716724356.289209 2 /
+       rgmanager  1689         8.845681         1   119         8.845681         0.338846         0.000000 2 /autogroup-220
+           getty  1747         0.708641         2   120         0.708641         2.302232         0.000000 2 /autogroup-237
+           lockd  2157     10371.617534         2   120     10371.617534         0.119612         0.166586 2 /
+            bash 27528    326579.820403         1   120    326579.820403         1.003372         0.000000 2 /autogroup-48414
+R            cat 27536    326587.624173         6   120    326587.624173         1.462319         1.202903 2 /autogroup-48414
+
+cpu#20, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 19315760
+  .nr_load_updates               : 15753272
+  .nr_uninterruptible            : 26
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787683.437200
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 22252221
+  .sched_count                   : 760673374
+  .sched_goidle                  : 8745494
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 7400842
+  .ttwu_local                    : 3407893
+
+cfs_rq[20]:/autogroup-48414
+  .exec_clock                    : 30024.615924
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 29698.922363
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308954363.369588
+  .nr_spread_over                : 336
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 833
+  .tg_load_contrib               : 833
+  .tg_runnable_contrib           : 20
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787683.435655
+  .se->vruntime                  : 327578287.136521
+  .se->sum_exec_runtime          : 30024.618022
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.033640
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.136215
+  .se->statistics.wait_sum       : 13.365994
+  .se->statistics.wait_count     : 20788
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 1401
+  .se->avg.runnable_avg_period   : 47997
+  .se->avg.load_avg_contrib      : 313
+  .se->avg.decay_count           : 3544604954
+
+cfs_rq[20]:/
+  .exec_clock                    : 15178909.714394
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 327578287.136521
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 18594224.844570
+  .nr_spread_over                : 1006
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 313
+  .tg_load_contrib               : 313
+  .tg_runnable_contrib           : 31
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 1418
+  .avg->runnable_avg_period      : 46801
+
+rt_rq[20]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/21    30 327578267.192300     36075   120 327578267.192300      1479.823491 3716785597.736526 2 /
+     watchdog/20   173       -11.956063    930023     0       -11.956063     11971.467231         0.002051 2 /
+    migration/20   174         0.000000     53480     0         0.000000      1597.236473         0.001966 2 /
+    ksoftirqd/20   175 327528600.676568      2374   120 327528600.676568        28.051655 3716652690.007631 2 /
+    kworker/20:0   176  62006870.107878    735244   120  62006870.107878     15728.763256 2490987951.364326 2 /
+   kworker/20:0H   177  62006868.964017         5   100  62006868.964017         0.020556 2491017659.693931 2 /
+       kdevtmpfs   235  62006870.114951       242   120  62006870.114951         7.206910 2491017803.084944 2 /
+    kworker/20:1   303 327578271.168048    724905   120 327578271.168048     14036.160804 3716761379.602496 2 /
+ kvm-irqfd-clean   884     11446.403783         2   100     11446.403783         0.015851         0.015710 2 /
+          opensm  1558    122016.453110     85965   120    122016.453110      4727.148241 3716748591.741216 2 /autogroup-219
+          opensm  1562    122016.222175     85978   120    122016.222175      4773.873533 3716708578.956970 2 /autogroup-219
+          opensm  1565    122016.455055     85771   120    122016.455055      4816.485022 3716736663.649607 2 /autogroup-219
+          opensm  1572    122016.559082     85902   120    122016.559082      4775.492714 3716726713.569254 2 /autogroup-219
+          opensm  1575    122016.549193     85826   120    122016.549193      4762.211990 3716746708.712437 2 /autogroup-219
+          opensm  1576    122016.500932     85828   120    122016.500932      4692.861271 3716738631.678827 2 /autogroup-219
+          opensm  1577    122016.426112     85855   120    122016.426112      4763.878157 3716748555.707135 2 /autogroup-219
+          opensm  1585    122016.414908     85839   120    122016.414908      4773.526493 3716718571.751708 2 /autogroup-219
+          opensm  1588    122016.463764     85941   120    122016.463764      4881.397621 3716728453.245799 2 /autogroup-219
+          opensm  1589    122016.223925     85965   120    122016.223925      4891.041280 3716708462.406059 2 /autogroup-219
+          opensm  1590    122016.462249     85838   120    122016.462249      4763.116679 3716726560.987446 2 /autogroup-219
+          opensm  1607    122028.430998   2926420   120    122028.430998    179925.690672 3716572928.509851 2 /autogroup-219
+   kworker/u64:0 23778 327578267.196045       118   120 327578267.196045         6.283767     72952.691293 2 /
+
+cpu#21, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 7772862
+  .nr_load_updates               : 11024980
+  .nr_uninterruptible            : 206
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.518938
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 31753072
+  .sched_count                   : 38207616
+  .sched_goidle                  : 2758117
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 2428846
+  .ttwu_local                    : 1291995
+
+cfs_rq[21]:/
+  .exec_clock                    : 12992233.269085
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 225247412.806468
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -83736649.485483
+  .nr_spread_over                : 528
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 4
+  .avg->runnable_avg_period      : 46265
+
+rt_rq[21]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/17    26 225247400.831953     37433   120 225247400.831953      1659.423757 3716785403.690200 2 /
+     watchdog/21   178       -11.956354    930023     0       -11.956354      8619.378374         0.002044 2 /
+    migration/21   179         0.000000     25642     0         0.000000       779.975425         0.001900 2 /
+    ksoftirqd/21   180 225243963.063260       897   120 225243963.063260        11.844827 3716765205.734221 2 /
+    kworker/21:0   181        -8.608254        20   120        -8.608254         0.442492      3908.657968 2 /
+   kworker/21:0H   182    893949.793861         4   100    893949.793861         0.017691 2491017646.329085 2 /
+    kworker/21:1   302 225247399.281478    281483   120 225247399.281478      6428.267213 3716756441.582664 2 /
+   kworker/u72:1   887  38363631.394700       500   100  38363631.394700        11.802457 3628363016.525407 2 /
+          opensm  1564     17873.955582     85722   120     17873.955582      4774.902691 3716708579.121232 2 /autogroup-219
+          opensm  1616     17886.357162    748054   120     17886.357162     52407.951874 3716700686.753945 2 /autogroup-219
+
+cpu#22, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 16182829
+  .nr_load_updates               : 14732534
+  .nr_uninterruptible            : -107
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787676.665305
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 27332897
+  .sched_count                   : 796680396
+  .sched_goidle                  : 7465389
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 6567425
+  .ttwu_local                    : 2867217
+
+cfs_rq[22]:/autogroup-48414
+  .exec_clock                    : 8723.017628
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 8339.772163
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308975722.519788
+  .nr_spread_over                : 184
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 9
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787671.650876
+  .se->vruntime                  : 331986835.164665
+  .se->sum_exec_runtime          : 8723.018952
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.010741
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.194423
+  .se->statistics.wait_sum       : 8.180149
+  .se->statistics.wait_count     : 5885
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 453
+  .se->avg.runnable_avg_period   : 47164
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604942
+
+cfs_rq[22]:/
+  .exec_clock                    : 14550482.055831
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 331986835.179672
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 23002772.887721
+  .nr_spread_over                : 904
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 930
+  .tg_load_contrib               : 930
+  .tg_runnable_contrib           : 10
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 503
+  .avg->runnable_avg_period      : 46855
+
+rt_rq[22]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+            init     1       387.300809     64477   120       387.300809     21503.055783 3716715145.712341 2 /autogroup-2
+        rcuos/20    29 331986823.216443    271965   120 331986823.216443     15987.939728 3716771231.209259 2 /
+     watchdog/22   183       -11.958338    930023     0       -11.958338     12089.671182         0.002003 2 /
+    migration/22   184         0.000000     48850     0         0.000000      1531.371824         0.001915 2 /
+    ksoftirqd/22   185 331970660.806490      2227   120 331970660.806490        27.863398 3716602798.064054 2 /
+    kworker/22:0   186 331986811.338618   1051360   120 331986811.338618     22920.400380 3716742907.955987 2 /
+   kworker/22:0H   187  64184449.497710         5   100  64184449.497710         0.020021 2491017632.994763 2 /
+   kworker/u72:0   243 331970116.959082       329   100 331970116.959082         7.670144 3716562767.073897 2 /
+      khugepaged   260 331986797.903748    375409   139 331986797.903748     33313.968244 3716743943.392223 2 /
+    kworker/22:1   294       -12.964609         2   120       -12.964609         0.096013         0.094036 2 /
+   kworker/u67:1   407 325943813.237060       202   120 325943813.237060         8.843242 3700198685.662441 2 /
+   systemd-udevd   666       186.336039      1890   120       186.336039       956.932675 2491004083.358289 2 /autogroup-90
+          opensm  1570    140165.497327     85843   120    140165.497327      4779.149007 3716718243.895937 2 /autogroup-219
+          opensm  1571    140165.975356     85922   120    140165.975356      4827.655542 3716748170.827177 2 /autogroup-219
+          opensm  1586    140165.946227     85922   120    140165.946227      4785.664988 3716748532.980511 2 /autogroup-219
+   kworker/u67:0  1220 325943813.525174      5302   120 325943813.525174       596.201084 1123072910.318962 2 /
+
+cpu#23, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8639507
+  .nr_load_updates               : 11766978
+  .nr_uninterruptible            : 817
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787684.644206
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 23121593
+  .sched_count                   : 31193866
+  .sched_goidle                  : 3516092
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 3135156
+  .ttwu_local                    : 2050938
+
+cfs_rq[23]:/
+  .exec_clock                    : 10849389.617605
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 204610192.789519
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -104373869.502432
+  .nr_spread_over                : 484
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 4
+  .tg_load_contrib               : 4
+  .tg_runnable_contrib           : 2
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 117
+  .avg->runnable_avg_period      : 47611
+
+rt_rq[23]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/19    28 204610192.175472    500848   120 204610192.175472     30695.522261 3716756519.380621 2 /
+     watchdog/23   188       -11.957618    930023     0       -11.957618      8858.223408         0.001944 2 /
+    migration/23   189         0.000000     26150     0         0.000000       801.125276         0.001855 2 /
+    ksoftirqd/23   190 202710971.800697      1345   120 202710971.800697        15.532205 3712667085.827351 2 /
+    kworker/23:0   191        -8.772016        20   120        -8.772016         0.278747      3882.216527 2 /
+   kworker/23:0H   192    680693.200938         5   100    680693.200938         0.018870 2491017619.655198 2 /
+    kworker/23:1   295 204610179.426425    287353   120 204610179.426425      6783.643315 3716757967.340603 2 /
+          opensm  1618     18209.816228   2084005   120     18209.816228    184800.306558 3716567621.984245 2 /autogroup-219
+           gmain  2028         0.659024       126   120         0.659024        11.764587 3094519825.409972 2 /autogroup-265
+
+cpu#24, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 33952986
+  .nr_load_updates               : 24494335
+  .nr_uninterruptible            : -19201
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.522910
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 28167190
+  .sched_count                   : 358434967
+  .sched_goidle                  : 15552995
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 15010034
+  .ttwu_local                    : 11124402
+
+cfs_rq[24]:/autogroup-48414
+  .exec_clock                    : 14249.835969
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 13849.009119
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308970213.282832
+  .nr_spread_over                : 560
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 2717
+  .tg->runnable_avg              : 5502
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787507.974317
+  .se->vruntime                  : 314694284.213028
+  .se->sum_exec_runtime          : 14249.835969
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.016035
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 1.116609
+  .se->statistics.wait_sum       : 13.865238
+  .se->statistics.wait_count     : 12279
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 2
+  .se->avg.runnable_avg_period   : 46693
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604786
+
+cfs_rq[24]:/
+  .exec_clock                    : 25837113.235656
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 314694284.213028
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 5710221.921077
+  .nr_spread_over                : 1309
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 14
+  .avg->runnable_avg_period      : 47767
+
+rt_rq[24]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/27    36 314694272.309046    758528   120 314694272.309046     56380.739514 3716730403.053275 3 /
+     watchdog/24   193       -11.952826    930023     0       -11.952826     12094.062347         0.002204 3 /
+    migration/24   194         0.000000    117465     0         0.000000      2030.083105         0.002146 3 /
+    ksoftirqd/24   195 314666333.541896     39508   120 314666333.541896       384.482709 3716695656.379066 3 /
+   kworker/24:0H   197  30448810.958355         4   100  30448810.958355         0.013926 2491017606.234786 3 /
+         kswapd3   257         0.976994         4   120         0.976994         0.071206       100.206178 3 /
+    kworker/24:1   300 314694266.635010   1152255   120 314694266.635010     24240.049964 3716727821.271312 3 /
+   kworker/u73:1   559 314675954.983871      1613   100 314675954.983871        35.239096 3716710236.393603 3 /
+            ntpd  2467     17847.153377   3803009   120     17847.153377    197573.526822 3716554858.151297 3 /autogroup-273
+ fail2ban-server  2625     50240.106503    124546   120     50240.106503     11400.085826 3716713626.731806 3 /autogroup-274
+    kworker/24:2 18539  21822424.131009         2   120  21822424.131009         0.093517         0.013824 3 /
+   kworker/u68:1   448  90337122.917153      1767   120  90337122.917153       337.449751 1036340351.916046 3 /
+            bash  4443        24.646287       576   120        24.646287       123.879369    207568.262162 3 /autogroup-48357
+          python  7731     12396.636815      2292   120     12396.636815       127.241626    517736.722843 3 /autogroup-48414
+
+cpu#25, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 7077822
+  .nr_load_updates               : 10977031
+  .nr_uninterruptible            : 0
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.525288
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 24732379
+  .sched_count                   : 30681928
+  .sched_goidle                  : 2465036
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 2179228
+  .ttwu_local                    : 1365364
+
+cfs_rq[25]:/
+  .exec_clock                    : 13615328.196688
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 235621784.588549
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -73362277.703402
+  .nr_spread_over                : 537
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 0
+  .avg->runnable_avg_period      : 47539
+
+rt_rq[25]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/30    39 235621778.250819   1293846   120 235621778.250819     97874.628082 3716688632.947198 3 /
+     watchdog/25   199       -11.956272    930023     0       -11.956272      8058.794165         0.001850 3 /
+    migration/25   200         0.000000     25285     0         0.000000       747.781613         0.002159 3 /
+    ksoftirqd/25   201 235610104.178795       582   120 235610104.178795         8.717923 3716490876.698213 3 /
+    kworker/25:0   202        -8.746301        19   120        -8.746301         0.304486      3855.101130 3 /
+   kworker/25:0H   203    716332.412517         5   100    716332.412517         0.014196 2491017592.888787 3 /
+    kworker/25:1   301 235621770.874825    270289   120 235621770.874825      6121.384914 3716758709.305543 3 /
+
+cpu#26, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 21138678
+  .nr_load_updates               : 17488402
+  .nr_uninterruptible            : -3606
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.526284
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 19028233
+  .sched_count                   : 279377453
+  .sched_goidle                  : 9122295
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 8641815
+  .ttwu_local                    : 5981285
+
+cfs_rq[26]:/
+  .exec_clock                    : 17078050.894151
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 273912831.683928
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -35071230.608023
+  .nr_spread_over                : 846
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 13083
+  .tg->runnable_avg              : 5460
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 1
+  .avg->runnable_avg_period      : 47309
+
+rt_rq[26]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/28    37 273912820.100525   7064121   120 273912820.100525    601445.244877 3716184639.681264 3 /
+     watchdog/26   204       -11.956884    930023     0       -11.956884     12379.251808         0.002109 3 /
+    migration/26   205         0.000000     53971     0         0.000000      1489.527448         0.001917 3 /
+    ksoftirqd/26   206 273899874.340962      5089   120 273899874.340962        49.355680 3716266605.646318 3 /
+   kworker/26:0H   208  23807656.697907         5   100  23807656.697907         0.022047 2491017579.523305 3 /
+        whoopsie  1997      1418.606142     76905   120      1418.606142     17894.159569 3716713536.805257 3 /autogroup-265
+        rsyslogd 29559       354.367182        41   120       354.367182        10.166127 1866635961.461899 3 /autogroup-21487
+    kworker/26:2 19315  25089977.859505         4   120  25089977.859505         0.066139 761707480.743861 3 /
+    kworker/26:0 11767 273912817.645733    368281   120 273912817.645733      7220.500807 1061782489.193108 3 /
+        workflow 26480      3987.007368        92   120      3987.007368        50.393623      1899.723235 3 /autogroup-48414
+
+cpu#27, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 13957113
+  .nr_load_updates               : 12704357
+  .nr_uninterruptible            : 14942
+  .next_balance                  : 5224.913250
+  .curr->pid                     : 0
+  .clock                         : 3716787683.574554
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 10
+  .cpu_load[2]                   : 27
+  .cpu_load[3]                   : 24
+  .cpu_load[4]                   : 15
+  .yld_count                     : 37279740
+  .sched_count                   : 50648435
+  .sched_goidle                  : 5017645
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 6252168
+  .ttwu_local                    : 3678847
+
+cfs_rq[27]:/autogroup-48414
+  .exec_clock                    : 70725.881844
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 119745.641372
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308864316.650579
+  .nr_spread_over                : 3380
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 20
+  .tg_load_avg                   : 2696
+  .tg->runnable_avg              : 5557
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787683.566547
+  .se->vruntime                  : 220218838.281559
+  .se->sum_exec_runtime          : 70725.881844
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.024246
+  .se->statistics.slice_max      : 0.332574
+  .se->statistics.wait_max       : 0.400556
+  .se->statistics.wait_sum       : 63.055171
+  .se->statistics.wait_count     : 70437
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 1163
+  .se->avg.runnable_avg_period   : 47005
+  .se->avg.load_avg_contrib      : 379
+  .se->avg.decay_count           : 3544604954
+
+cfs_rq[27]:/
+  .exec_clock                    : 14277351.813468
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 220218838.281559
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -88765224.010392
+  .nr_spread_over                : 602
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 441
+  .tg_load_contrib               : 441
+  .tg_runnable_contrib           : 24
+  .tg_load_avg                   : 12972
+  .tg->runnable_avg              : 5513
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 1163
+  .avg->runnable_avg_period      : 47845
+
+rt_rq[27]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/24    33 220218821.315302   1505708   120 220218821.315302     96908.144563 3716689527.332467 3 /
+     watchdog/27   209       -11.956952    930023     0       -11.956952      6573.056591         0.002119 3 /
+    migration/27   210         0.000000    170631     0         0.000000      1988.908963         0.001958 3 /
+    ksoftirqd/27   211 220201613.757649      1775   120 220201613.757649        16.003698 3716770644.148061 3 /
+    kworker/27:0   212       123.108028        19   120       123.108028         0.251740      3828.386598 3 /
+   kworker/27:0H   213   4865203.215473         4   100   4865203.215473         0.019494 2491017566.148559 3 /
+    kworker/27:1   304 220218823.708087   1428816   120 220218823.708087     23809.131627 3716728585.592706 3 /
+         deferwq   327       260.297892         2   100       260.297892         0.092445         0.170208 3 /
+          rpciod   705      5220.489279         2   100      5220.489279         0.017947         0.012892 3 /
+          nfsiod   711      5232.525162         2   100      5232.525162         0.017365         0.015498 3 /
+         ib_addr   727      5244.556132         2   100      5244.556132         0.022667         0.018677 3 /
+        ib_mcast   729      5256.575715         2   100      5256.575715         0.021248         0.018481 3 /
+         mlx4_ib   730      5268.594446         2   100      5268.594446         0.020942         0.018587 3 /
+     mlx4_ib_mcg   731      5280.606587         2   100      5280.606587         0.013621         0.013983 3 /
+         ib_mad1   732      5292.713968         2   100      5292.713968         0.110063         0.025028 3 /
+           ib_cm   735      5304.729343         2   100      5304.729343         0.017198         0.015481 3 /
+           ipoib   741      5316.755451         2   100      5316.755451         0.020538         0.016542 3 /
+        iw_cm_wq   750      5328.774753         2   100      5328.774753         0.021130         0.019737 3 /
+         rdma_cm   751      5340.790629         2   100      5340.790629         0.017361         0.015044 3 /
+          opensm  1617       227.325012         1   120       227.325012         0.096313         0.000000 3 /autogroup-219
+           getty  2716         1.226206        16   120         1.226206         2.987161        90.469794 3 /autogroup-278
+
+cpu#28, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 73008108
+  .nr_load_updates               : 32076248
+  .nr_uninterruptible            : -2011
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787688.196914
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 26370054
+  .sched_count                   : 585384154
+  .sched_goidle                  : 33022156
+  .avg_idle                      : 718129
+  .ttwu_count                    : 44752642
+  .ttwu_local                    : 25171524
+
+cfs_rq[28]:/autogroup-271
+  .exec_clock                    : 2142135.384413
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 2142134.335837
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -306841927.956114
+  .nr_spread_over                : 3
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787363.225613
+  .se->vruntime                  : 302343045.515616
+  .se->sum_exec_runtime          : 2142142.766898
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.026038
+  .se->statistics.slice_max      : 9.083901
+  .se->statistics.wait_max       : 3.445477
+  .se->statistics.wait_sum       : 34973.615896
+  .se->statistics.wait_count     : 4676716
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 8
+  .se->avg.runnable_avg_period   : 47826
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604648
+
+cfs_rq[28]:/
+  .exec_clock                    : 19175648.791662
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 302343045.515616
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -6641016.776335
+  .nr_spread_over                : 1169
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 15
+  .tg_load_contrib               : 15
+  .tg_runnable_contrib           : 9
+  .tg_load_avg                   : 12150
+  .tg->runnable_avg              : 4986
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 419
+  .avg->runnable_avg_period      : 47569
+
+rt_rq[28]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/25    34 302343033.653344     84243   120 302343033.653344      4161.724765 3716782702.436224 3 /
+     watchdog/28   214       -11.955310    930023     0       -11.955310     13324.542096         0.002066 3 /
+    migration/28   215         0.000000    146388     0         0.000000      2410.754188         0.001902 3 /
+    ksoftirqd/28   216 302341864.275422     25574   120 302341864.275422       404.584941 3716775226.021865 3 /
+    kworker/28:0   217        -8.573958        19   120        -8.573958         0.476828      3815.051499 3 /
+   kworker/28:0H   218  50016217.404577         5   100  50016217.404577         0.020284 2491017552.817376 3 /
+    kworker/28:1   307 302343035.162164   8398502   120 302343035.162164    125074.503858 3716621611.906111 3 /
+         rpcbind  1125      1288.389294    123925   120      1288.389294      4508.107476 3716736891.111933 3 /autogroup-163
+            nrpe  2243     14391.753703     99584   120     14391.753703     16873.665105 3716689201.099435 3 /autogroup-268
+           snmpd  2391   2142134.335837   5094943   120   2142134.335837   2393055.101723 3714323009.329167 3 /autogroup-271
+ fail2ban-server  2637     56164.756304   3734611   120     56164.756304    325161.711753 3716425690.705651 3 /autogroup-274
+        workflow  7672       443.671659       110   120       443.671659        47.288528      1760.976794 3 /autogroup-48414
+
+cpu#29, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 6500952
+  .nr_load_updates               : 10590108
+  .nr_uninterruptible            : 173
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.531468
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 26359799
+  .sched_count                   : 31787381
+  .sched_goidle                  : 2262391
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 1966169
+  .ttwu_local                    : 1327509
+
+cfs_rq[29]:/
+  .exec_clock                    : 10578442.965481
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 204346251.071064
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -104637811.220887
+  .nr_spread_over                : 479
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 12150
+  .tg->runnable_avg              : 4986
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 12
+  .avg->runnable_avg_period      : 47392
+
+rt_rq[29]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/31    40 204346240.277849    425287   120 204346240.277849     28670.037818 3716758123.099645 3 /
+     watchdog/29   219       -11.956805    930023     0       -11.956805      7334.447970         0.002081 3 /
+    migration/29   220         0.000000     22717     0         0.000000       664.635012         0.001917 3 /
+    ksoftirqd/29   221 204326058.310193       565   120 204326058.310193         8.447552 3716216632.900418 3 /
+    kworker/29:0   222        11.243754        19   120        11.243754         0.255906      3802.002703 3 /
+   kworker/29:0H   223    900814.325297         5   100    900814.325297         0.014515 2491017539.470525 3 /
+           khubd   247 198484471.773384       533   120 198484471.773384        95.181753 3700209576.559164 3 /
+    kworker/29:1   306 204346238.621430    282333   120 204346238.621430      6544.450864 3716759736.291487 3 /
+
+cpu#30, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 45063483
+  .nr_load_updates               : 33669832
+  .nr_uninterruptible            : -26810
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.532478
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 27361939
+  .sched_count                   : 291844456
+  .sched_goidle                  : 20676453
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 16370788
+  .ttwu_local                    : 8833292
+
+cfs_rq[30]:/
+  .exec_clock                    : 44610280.224764
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 325865260.968706
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 16881198.676755
+  .nr_spread_over                : 2355
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg_load_avg                   : 12150
+  .tg->runnable_avg              : 4986
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 0
+  .avg->runnable_avg_period      : 47074
+
+rt_rq[30]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/29    38 325865248.999723     88418   120 325865248.999723      4940.499673 3716781628.482039 3 /
+     watchdog/30   224       -11.956570    930023     0       -11.956570     13259.020148         0.002033 3 /
+    migration/30   225         0.000000    190065     0         0.000000      2850.646166         0.001923 3 /
+    ksoftirqd/30   226 325858984.542064     11472   120 325858984.542064       115.779821 3716716373.882570 3 /
+   kworker/30:0H   228  23026090.031056         4   100  23026090.031056         0.015630 2491017526.088306 3 /
+   kworker/u73:0   244 321688710.524467      1603   100 321688710.524467        39.385151 3712279413.972511 3 /
+    kworker/30:1   297 325865248.282783   1714168   120 325865248.282783     31153.312093 3716722288.678091 3 /
+       in:imklog 29561      5441.551031        58   120      5441.551031         4.930534 1809749445.435165 3 /autogroup-21487
+   kworker/u68:0 13488 325624314.211066     12340   120 325624314.211066      2161.348729 1224556920.383190 3 /
+    kworker/30:0 14625  26895340.183496         2   120  26895340.183496         0.016887         0.011584 3 /
+
+cpu#31, 2200.105 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 22704698
+  .nr_load_updates               : 18537715
+  .nr_uninterruptible            : 5797
+  .next_balance                  : 5224.913219
+  .curr->pid                     : 0
+  .clock                         : 3716787652.534184
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .yld_count                     : 25097751
+  .sched_count                   : 46241032
+  .sched_goidle                  : 9984316
+  .avg_idle                      : 1000000
+  .ttwu_count                    : 9725587
+  .ttwu_local                    : 8467606
+
+cfs_rq[31]:/autogroup-48414
+  .exec_clock                    : 3618.425031
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 3596.024190
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -308980466.267761
+  .nr_spread_over                : 9
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 7
+  .tg_load_avg                   : 2696
+  .tg->runnable_avg              : 5019
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .se->exec_start                : 3716787515.173005
+  .se->vruntime                  : 206980973.323601
+  .se->sum_exec_runtime          : 3618.425031
+  .se->statistics.wait_start     : 0.000000
+  .se->statistics.sleep_start    : 0.000000
+  .se->statistics.block_start    : 0.000000
+  .se->statistics.sleep_max      : 0.000000
+  .se->statistics.block_max      : 0.000000
+  .se->statistics.exec_max       : 4.014012
+  .se->statistics.slice_max      : 0.000000
+  .se->statistics.wait_max       : 0.217359
+  .se->statistics.wait_sum       : 3.746334
+  .se->statistics.wait_count     : 2474
+  .se->load.weight               : 2
+  .se->avg.runnable_avg_sum      : 368
+  .se->avg.runnable_avg_period   : 47641
+  .se->avg.load_avg_contrib      : 0
+  .se->avg.decay_count           : 3544604793
+
+cfs_rq[31]:/
+  .exec_clock                    : 12666244.766509
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 206980973.323601
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -102003088.968350
+  .nr_spread_over                : 510
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 7
+  .tg_load_avg                   : 12150
+  .tg->runnable_avg              : 4986
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 353
+  .avg->runnable_avg_period      : 46413
+
+rt_rq[31]:
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.000000
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     exec-runtime         sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        rcuos/26    35 206980961.354596   1533121   120 206980961.354596     85997.700863 3716700613.477557 3 /
+     watchdog/31   229       -11.956621    930023     0       -11.956621      9112.988873         0.002047 3 /
+    migration/31   230         0.000000     29009     0         0.000000       810.476280         0.001836 3 /
+    ksoftirqd/31   231 206961926.603284      5948   120 206961926.603284        60.026009 3715921975.997455 3 /
+    kworker/31:0   232    886337.004388        20   120    886337.004388         0.268100 1732808210.247205 3 /
+   kworker/31:0H   233   1008965.951007         5   100   1008965.951007         0.015922 2491017512.763694 3 /
+    kworker/31:1   296 206980952.177056    439591   120 206980952.177056     10164.720122 3716756833.052738 3 /
+
+
++++++ Running uptime +++++
+ 11:24:54 up 43 days,  1:21,  2 users,  load average: 1.52, 1.12, 0.69
+
++++++ Running cat /etc/*-release | uniq +++++
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=14.04
+DISTRIB_CODENAME=trusty
+DISTRIB_DESCRIPTION="Ubuntu 14.04.5 LTS"
+NAME="Ubuntu"
+VERSION="14.04.5 LTS, Trusty Tahr"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 14.04.5 LTS"
+VERSION_ID="14.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+
++++++ Running uname -a +++++
+Linux dmi-minta 3.13.0-135-generic #184-Ubuntu SMP Wed Oct 18 11:55:51 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
++++++ Running vmstat +++++
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 256628048 727144 3875688    0    0     0     0    0    0  0  0 99  0  0
+
++++++ Running  +++++
+Linux dmi-minta 3.13.0-135-generic #184-Ubuntu SMP Wed Oct 18 11:55:51 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
++++++ Running cat /sys/devices/system/node//numastat +++++
+Numastats for node0
+numa_hit 152982195
+numa_miss 0
+numa_foreign 0
+interleave_hit 29785
+local_node 151986926
+other_node 995269
+
+Numastats for node1
+numa_hit 330377697
+numa_miss 0
+numa_foreign 0
+interleave_hit 29999
+local_node 329422592
+other_node 955105
+
+Numastats for node2
+numa_hit 68894499
+numa_miss 0
+numa_foreign 0
+interleave_hit 29792
+local_node 67845385
+other_node 1049114
+
+Numastats for node3
+numa_hit 202108672
+numa_miss 0
+numa_foreign 0
+interleave_hit 29989
+local_node 201105486
+other_node 1003186
+
+
++++++ Running cat /sys/devices/system/node/node3/meminfo +++++
+Meminfos for node0
+Node 0 MemTotal:       65978060 kB
+Node 0 MemFree:        65077516 kB
+Node 0 MemUsed:          900544 kB
+Node 0 Active:           364612 kB
+Node 0 Inactive:          63472 kB
+Node 0 Active(anon):      10192 kB
+Node 0 Inactive(anon):       28 kB
+Node 0 Active(file):     354420 kB
+Node 0 Inactive(file):    63444 kB
+Node 0 Unevictable:         648 kB
+Node 0 Mlocked:             648 kB
+Node 0 Dirty:                 4 kB
+Node 0 Writeback:             0 kB
+Node 0 FilePages:        418740 kB
+Node 0 Mapped:             6088 kB
+Node 0 AnonPages:         10120 kB
+Node 0 Shmem:               264 kB
+Node 0 KernelStack:        1768 kB
+Node 0 PageTables:         1424 kB
+Node 0 NFS_Unstable:          0 kB
+Node 0 Bounce:                0 kB
+Node 0 WritebackTmp:          0 kB
+Node 0 Slab:              53352 kB
+Node 0 SReclaimable:      30440 kB
+Node 0 SUnreclaim:        22912 kB
+Node 0 AnonHugePages:         0 kB
+Node 0 HugePages_Total:     0
+Node 0 HugePages_Free:      0
+Node 0 HugePages_Surp:      0
+
+Meminfos for node1
+Node 1 MemTotal:       66059272 kB
+Node 1 MemFree:        63679536 kB
+Node 1 MemUsed:         2379736 kB
+Node 1 Active:          1437148 kB
+Node 1 Inactive:         260592 kB
+Node 1 Active(anon):      16360 kB
+Node 1 Inactive(anon):       88 kB
+Node 1 Active(file):    1420788 kB
+Node 1 Inactive(file):   260504 kB
+Node 1 Unevictable:         420 kB
+Node 1 Mlocked:             420 kB
+Node 1 Dirty:                76 kB
+Node 1 Writeback:             0 kB
+Node 1 FilePages:       1681740 kB
+Node 1 Mapped:             6476 kB
+Node 1 AnonPages:         16220 kB
+Node 1 Shmem:               200 kB
+Node 1 KernelStack:        1096 kB
+Node 1 PageTables:         1392 kB
+Node 1 NFS_Unstable:          0 kB
+Node 1 Bounce:                0 kB
+Node 1 WritebackTmp:          0 kB
+Node 1 Slab:             134640 kB
+Node 1 SReclaimable:     113460 kB
+Node 1 SUnreclaim:        21180 kB
+Node 1 AnonHugePages:         0 kB
+Node 1 HugePages_Total:     0
+Node 1 HugePages_Free:      0
+Node 1 HugePages_Surp:      0
+
+Meminfos for node2
+Node 2 MemTotal:       66059272 kB
+Node 2 MemFree:        65144324 kB
+Node 2 MemUsed:          914948 kB
+Node 2 Active:           247340 kB
+Node 2 Inactive:         187388 kB
+Node 2 Active(anon):       9732 kB
+Node 2 Inactive(anon):       12 kB
+Node 2 Active(file):     237608 kB
+Node 2 Inactive(file):   187376 kB
+Node 2 Unevictable:          60 kB
+Node 2 Mlocked:              60 kB
+Node 2 Dirty:                 0 kB
+Node 2 Writeback:            56 kB
+Node 2 FilePages:        425140 kB
+Node 2 Mapped:             5420 kB
+Node 2 AnonPages:         10060 kB
+Node 2 Shmem:               148 kB
+Node 2 KernelStack:         720 kB
+Node 2 PageTables:         1116 kB
+Node 2 NFS_Unstable:          0 kB
+Node 2 Bounce:                0 kB
+Node 2 WritebackTmp:          0 kB
+Node 2 Slab:              76756 kB
+Node 2 SReclaimable:      58748 kB
+Node 2 SUnreclaim:        18008 kB
+Node 2 AnonHugePages:         0 kB
+Node 2 HugePages_Total:     0
+Node 2 HugePages_Free:      0
+Node 2 HugePages_Surp:      0
+
+Meminfos for node3
+Node 3 MemTotal:       66042836 kB
+Node 3 MemFree:        62727448 kB
+Node 3 MemUsed:         3315388 kB
+Node 3 Active:          1545552 kB
+Node 3 Inactive:         554424 kB
+Node 3 Active(anon):      22988 kB
+Node 3 Inactive(anon):       24 kB
+Node 3 Active(file):    1522564 kB
+Node 3 Inactive(file):   554400 kB
+Node 3 Unevictable:         184 kB
+Node 3 Mlocked:             184 kB
+Node 3 Dirty:                 4 kB
+Node 3 Writeback:             0 kB
+Node 3 FilePages:       2077212 kB
+Node 3 Mapped:             7076 kB
+Node 3 AnonPages:         23196 kB
+Node 3 Shmem:               188 kB
+Node 3 KernelStack:         848 kB
+Node 3 PageTables:         1472 kB
+Node 3 NFS_Unstable:          0 kB
+Node 3 Bounce:                0 kB
+Node 3 WritebackTmp:          0 kB
+Node 3 Slab:             813748 kB
+Node 3 SReclaimable:     780424 kB
+Node 3 SUnreclaim:        33324 kB
+Node 3 AnonHugePages:      2048 kB
+Node 3 HugePages_Total:     0
+Node 3 HugePages_Free:      0
+Node 3 HugePages_Surp:      0
+
+
++++++ Running cat /sys/devices/system/node//cpufreq/scaling_governor +++++
+Scaling governor for cpu0 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu1 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu2 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu3 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu4 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu5 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu6 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu7 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu8 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu9 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu10 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu11 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu12 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu13 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu14 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu15 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu16 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu17 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu18 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu19 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu20 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu21 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu22 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu23 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu24 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu25 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu26 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu27 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu28 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu29 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu30 and its current frequency
+performance
+2200000
+
+Scaling governor for cpu31 and its current frequency
+performance
+2200000
+
+
+Fri Dec 22 11:24:54 CET 2017
+========== End of Epilogue Info Listing ==========

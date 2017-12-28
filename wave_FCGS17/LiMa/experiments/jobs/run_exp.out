@@ -1,0 +1,2754 @@
+Starting prologue... Tue Dec 19 14:37:10 CET 2017
+Master node: l1428
+Kill all process from other users
+Adjust oom killer config
+Clearing buffers and caches on the nodes.
+Power management available, enabling ondemand governor
+End of prologue: Tue Dec 19 14:37:16 CET 2017
+JOB is going to be executed on:
+l1428
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Compiling method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+Compiling with parameters: 200 200 200
+gcc -O3 -march=native -mtune=native -ffast-math -funroll-loops -fopenmp example.c -lm -o ../bin/project
+------- Compiling method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+------- Compiling method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+Compiling with parameters: 200 200 200
+Setting PATUS_HOME to /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79
+Updating PATH to include /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/bin
+(INFO) Reading stencil specification example.stc...
+(INFO) Reading strategy cacheblocked.stg...
+(INFO) Creating code generator for OpenMP
+(INFO) Generating code...
+(INFO) Creating benchmarking harness...
+(INFO) Using directory /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/arch/CPU_OpenMP for benchmarking harness...
+(INFO) Copying runtime files from /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime
+(INFO) Copying file /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime/cycle.h to ./src/cycle.h
+(INFO) Copying file /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime/patusrt.h to ./src/patusrt.h
+(INFO) Copying file /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime/timer.c to ./src/timer.c
+(INFO) Copying file /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime/util.c to ./src/util.c
+(INFO) Processing .DS_Store
+(INFO) Processing driver.c
+(INFO) Processing Makefile
+(INFO) Processing ssemathlib.c
+(INFO) Processing ssemathlib.h
+(INFO) Processing ssereductions.c
+(INFO) Processing ssereductions.h
+(INFO) Writing kernel source...
+(INFO) Completed successfully.
+gcc -O3 -g -msse2 -fopenmp -I. -c -o kernel.o kernel.c
+gcc -O3 -g -msse2 -fopenmp -I. -c -o driver.o driver.c
+gcc -O3 -g -msse2 -fopenmp -I. -c -o ssemathlib.o ssemathlib.c
+gcc -O3 -g -msse2 -fopenmp -I. -c -o timer.o timer.c
+gcc -O3 -g -msse2 -fopenmp -I. -c -o util.o util.c
+gcc -O3 -g -msse2 -fopenmp -I. -o bench kernel.o driver.o ssemathlib.o timer.o util.o -lm
+------- Compiling method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+------- Compiling method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+Compiling with parameters: 200 200 200
+gcc -O3 -march=native -mtune=native -ftree-vectorize -frecord-gcc-switches -DTIME -DVERIFY  -fopenmp example.lbpar.c -o ../bin/project -lm	
+------- Compiling method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_143723-200_200_200-1_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_143723-200_200_200-1_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_143723-200_200_200-1_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_143723-200_200_200-1_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_143723-200_200_200-1_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_143723-200_200_200-1_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_143723-200_200_200-1_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_143723-200_200_200-1_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_143723-200_200_200-1_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_143723-200_200_200-1_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_143723-200_200_200-1_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+=>> PBS: job killed: walltime 604 exceeded limit 600
+Starting epilogue... Tue Dec 19 14:47:20 CET 2017
+=== JOB_STATISTICS ===
+=== current date     : Tue Dec 19 14:47:20 CET 2017
+= Job-ID             : 2109649.ladm1
+= Job-Name           : provajob-1
+= Queue              : devel
+= PBS_O_WORKDIR      : /home/hpc/ihpc/ihpc07/PROVA
+= Requested resources: ncpus=1,neednodes=1:ppn=24,nodes=1:ppn=24,walltime=00:10:00
+= Used resources     : cput=00:09:50,mem=205532kb,vmem=9860692kb,walltime=00:10:05
+= Node list          : l1428
+= AccessKey          : d15f780d
+======================
+Power management available, setting all CPUs to ondemand govenor
+End of epilogue: Tue Dec 19 14:47:21 CET 2017
+Starting prologue... Tue Dec 19 15:04:23 CET 2017
+Master node: l1418
+Kill all process from other users
+Adjust oom killer config
+Clearing buffers and caches on the nodes.
+Power management available, enabling ondemand governor
+End of prologue: Tue Dec 19 15:04:29 CET 2017
+JOB is going to be executed on:
+l1418
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Compiling method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+Compiling with parameters: 200 200 200
+gcc -O3 -march=native -mtune=native -ffast-math -funroll-loops -fopenmp example.c -lm -o ../bin/project
+------- Compiling method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+------- Compiling method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+Compiling with parameters: 200 200 200
+Setting PATUS_HOME to /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79
+Updating PATH to include /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/bin
+(INFO) Reading stencil specification example.stc...
+(INFO) Reading strategy cacheblocked.stg...
+(INFO) Creating code generator for OpenMP
+(INFO) Generating code...
+(INFO) Creating benchmarking harness...
+(INFO) Using directory /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/arch/CPU_OpenMP for benchmarking harness...
+(INFO) Copying runtime files from /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime
+(INFO) Copying file /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime/cycle.h to ./src/cycle.h
+(INFO) Copying file /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime/patusrt.h to ./src/patusrt.h
+(INFO) Copying file /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime/timer.c to ./src/timer.c
+(INFO) Copying file /home/hpc/ihpc/ihpc07/PROVA/software/easybuild/software/PATUS/0.1.4-Java-1.7.0_79/runtime/util.c to ./src/util.c
+(INFO) Processing .DS_Store
+(INFO) Processing driver.c
+(INFO) Processing Makefile
+(INFO) Processing ssemathlib.c
+(INFO) Processing ssemathlib.h
+(INFO) Processing ssereductions.c
+(INFO) Processing ssereductions.h
+(INFO) Writing kernel source...
+(INFO) Completed successfully.
+gcc -O3 -g -msse2 -fopenmp -I. -c -o kernel.o kernel.c
+gcc -O3 -g -msse2 -fopenmp -I. -c -o driver.o driver.c
+gcc -O3 -g -msse2 -fopenmp -I. -c -o ssemathlib.o ssemathlib.c
+gcc -O3 -g -msse2 -fopenmp -I. -c -o timer.o timer.c
+gcc -O3 -g -msse2 -fopenmp -I. -c -o util.o util.c
+gcc -O3 -g -msse2 -fopenmp -I. -o bench kernel.o driver.o ssemathlib.o timer.o util.o -lm
+------- Compiling method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+------- Compiling method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+Compiling with parameters: 200 200 200
+gcc -O3 -march=native -mtune=native -ftree-vectorize -frecord-gcc-switches -DTIME -DVERIFY  -fopenmp example.lbpar.c -o ../bin/project -lm	
+------- Compiling method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-1_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-1_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-1_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-1_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-1_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-1_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-1_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-1_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-1_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-1_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-1_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 20 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 1 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-1_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-2_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-2_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-2_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-2_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-2_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-2_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0@S1:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-2_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0@S1:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-2_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0@S1:0
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-2_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-2_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-2_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 40 48 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 2 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-2_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-4_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-4_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-4_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-4_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-4_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-4_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-1@S1:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-4_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-1@S1:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-4_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-1@S1:0-1
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-4_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-4_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-4_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 12 8 4 5
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 4 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-4_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-6_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-6_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-6_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-6_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-6_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-6_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-2@S1:0-2
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-6_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-2@S1:0-2
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-6_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-2@S1:0-2
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-6_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-6_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-6_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 68 48 2 5
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 6 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-6_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-8_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-8_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-8_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-8_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-8_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-8_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-3@S1:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-8_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-3@S1:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-8_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-3@S1:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-8_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-8_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-8_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 40 12 2 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 8 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-8_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-12_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-12_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-12_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-12_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-12_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-12_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-5@S1:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-12_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-5@S1:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-12_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-5@S1:0-5
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-12_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-12_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-12_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 44 36 1 4
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 12 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-12_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-16_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-16_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-16_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-15
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-16_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-15
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-16_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-15
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-16_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-7@S1:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-16_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-7@S1:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-16_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-7@S1:0-7
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-16_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-16_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-16_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 8 16 4 8
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 16 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-3
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-16_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-24_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-24_none.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-24_none.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-23
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-24_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-23
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-24_node.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c N:0-23
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-24_node.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-24_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-24_spread.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-24_spread.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+
+Inactive Modules:
+  1) EasyBuild
+
+
+Activating Modules:
+  1) EasyBuild/3.2.1
+
+
+
+------- Running methods: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/OpenMP/out/20171219_150437-200_200_200-24_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: OpenMP  - MethodType:  OpenMP-4.0-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PATUS/out/20171219_150437-200_200_200-24_fill.out -------
+------- Execution: 1  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+tuned params: 200 200 200 196 24 132 1 3
+------- Execution: 5  FINISHED! -------
+------- Running method: PATUS  - MethodType:  PATUS-0.1.4-Java-1.7.0_79-GCC-4.9.3-2.25  FINISHED! -------
+
+
+------- Running methods: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  STARTED! -------
+------- PARAMETERS: 200 200 200 -------
+------- Number of threads: 24 -------
+------- Number of executions: 5 -------
+
+likwid-pin -c S0:0-11@S1:0-11
+------- Name of output file: /home/hpc/ihpc/ihpc07/workspace/wave_FGCS17/PLUTO-pet/out/20171219_150437-200_200_200-24_fill.out -------
+------- Execution: 1  STARTED! -------
+------- Execution: 1  FINISHED! -------
+------- Execution: 2  STARTED! -------
+------- Execution: 2  FINISHED! -------
+------- Execution: 3  STARTED! -------
+------- Execution: 3  FINISHED! -------
+------- Execution: 4  STARTED! -------
+------- Execution: 4  FINISHED! -------
+------- Execution: 5  STARTED! -------
+------- Execution: 5  FINISHED! -------
+------- Running method: PLUTO-pet  - MethodType:  PLUTO-pet-0.11.0  FINISHED! -------
+
+Starting epilogue... Tue Dec 19 15:52:37 CET 2017
+=== JOB_STATISTICS ===
+=== current date     : Tue Dec 19 15:52:37 CET 2017
+= Job-ID             : 2109651.ladm1
+= Job-Name           : provajob-1
+= Queue              : work
+= PBS_O_WORKDIR      : /home/hpc/ihpc/ihpc07/PROVA
+= Requested resources: ncpus=1,neednodes=1:ppn=24,nodes=1:ppn=24,walltime=23:59:00
+= Used resources     : cput=02:33:50,mem=262260kb,vmem=9860692kb,walltime=00:48:09
+= Node list          : l1418
+= AccessKey          : 5fe51813
+======================
+Power management available, setting all CPUs to ondemand govenor
+End of epilogue: Tue Dec 19 15:52:38 CET 2017

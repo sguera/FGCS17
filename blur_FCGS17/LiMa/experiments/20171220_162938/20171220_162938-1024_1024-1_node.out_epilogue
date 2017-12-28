@@ -1,0 +1,1929 @@
+========== Beginning of Epilogue Info Listing ==========
+
+
++++++ Running cat /proc/diskstats +++++
+
++++++ Running cat /proc/meminfo +++++
+MemTotal:       24678756 kB
+MemFree:        21200336 kB
+MemAvailable:   21093480 kB
+Buffers:               0 kB
+Cached:          2740924 kB
+SwapCached:            0 kB
+Active:            86240 kB
+Inactive:        2689848 kB
+Active(anon):      47968 kB
+Inactive(anon):  2616036 kB
+Active(file):      38272 kB
+Inactive(file):    73812 kB
+Unevictable:       21576 kB
+Mlocked:           21576 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 4 kB
+Writeback:             0 kB
+AnonPages:         56820 kB
+Mapped:            50808 kB
+Shmem:           2628840 kB
+Slab:             209880 kB
+SReclaimable:      48128 kB
+SUnreclaim:       161752 kB
+KernelStack:        7152 kB
+PageTables:         3968 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    12339376 kB
+Committed_AS:    2815160 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      455672 kB
+VmallocChunk:   34346526716 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     14336 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      177536 kB
+DirectMap2M:     5056512 kB
+DirectMap1G:    22020096 kB
+
++++++ Running cat /proc/loadavg +++++
+0.59 0.78 1.99 1/466 26641
+
++++++ Running cat /proc/sched_debug +++++
+Sched Debug Version: v0.11, 3.10.0-693.5.2.el7.x86_64 #1
+ktime                                   : 3053044686.685877
+sched_clk                               : 3052922181.668434
+cpu_clk                                 : 3052922181.668504
+jiffies                                 : 7347711983
+sched_clock_stable()                    : 1
+
+sysctl_sched
+  .sysctl_sched_latency                    : 24.000000
+  .sysctl_sched_min_granularity            : 3.000000
+  .sysctl_sched_wakeup_granularity         : 4.000000
+  .sysctl_sched_child_runs_first           : 0
+  .sysctl_sched_features                   : 110203
+  .sysctl_sched_tunable_scaling            : 1 (logaritmic)
+
+cpu#0, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8954632969
+  .nr_load_updates               : 2220776722
+  .nr_uninterruptible            : -33278
+  .next_balance                  : 7347.711978
+  .curr->pid                     : 0
+  .clock                         : 3052922181.620653
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 173
+  .cpu_load[2]                   : 2416
+  .cpu_load[3]                   : 5612
+  .cpu_load[4]                   : 6760
+  .avg_idle                      : 990957
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[0]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9544449962.685338
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 0.000000
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 1048
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 27926
+  .avg->runnable_avg_period      : 46445
+
+rt_rq[0]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.043043
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     ksoftirqd/0     3 9544449950.690530   2197650   120         0.000000     17690.007773         0.000000 0 /
+     migration/0     8         0.000000    532225     0         0.000000      4532.228770         0.000000 0 /
+          rcu_bh     9       245.346597         2   120         0.000000         0.001179         0.000000 0 /
+      watchdog/0    11         0.000000    763266     0         0.000000      6517.832265         0.000000 0 /
+      khungtaskd   132 9544447111.850264     25444   120         0.000000      1891.082673         0.000000 0 /
+         kswapd0   146      1501.139063         4   120         0.000000         0.025355         0.000000 0 /
+       scsi_eh_1   369      1899.218578        22   120         0.000000         1.308400         0.000000 0 /
+       scsi_eh_2   371      1907.182925        22   120         0.000000         6.477695         0.000000 0 /
+        rdma-ndd   561      1944.889338         5   120         0.000000         9.793530         0.000000 0 /
+            sshd   828 9542759676.581501       324   120         0.000000        65.361136         0.000000 0 /
+          ypbind   852      1965.588917        15   120         0.000000         5.891439         0.000000 0 /
+            ntpd   942 9544444752.042641     17127   120         0.000000      3122.952331         0.000000 0 /
+ ptlrpc_hr00_000  1070      2000.114793         3   120         0.000000         0.048658         0.000000 0 /
+ ptlrpc_hr00_002  1072      2000.120837         3   120         0.000000         0.037807         0.000000 0 /
+ ptlrpc_hr00_004  1074      2000.125740         3   120         0.000000         0.037101         0.000000 0 /
+ ptlrpc_hr00_005  1075      2000.131152         3   120         0.000000         0.017081         0.000000 0 /
+ kiblnd_sd_00_03  1095 9544447102.485044    682537   120         0.000000     10821.634470         0.000000 0 /
+ socknal_sd00_00  1109      2036.094978         3   120         0.000000         0.013945         0.000000 0 /
+ socknal_sd00_01  1110      2036.099780         3   120         0.000000         0.011283         0.000000 0 /
+ socknal_sd00_02  1111      2036.105544         3   120         0.000000         0.011165         0.000000 0 /
+ socknal_sd00_03  1112      2036.109783         3   120         0.000000         0.010165         0.000000 0 /
+ socknal_sd00_04  1113      2036.114600         3   120         0.000000         0.010655         0.000000 0 /
+ socknal_sd00_05  1114      2036.122468         3   120         0.000000         0.013037         0.000000 0 /
+      ldlm_bl_04 20064 9544065815.513954     57287   120         0.000000      1470.422219         0.000000 0 /
+      ldlm_bl_05 20065 9544065815.517489     60386   120         0.000000      1478.699396         0.000000 0 /
+    kworker/0:0H 14665 9544445093.871635   1482052   100         0.000000     16015.585312         0.000000 0 /
+     kworker/0:0 21903 9544449950.838140    797655   120         0.000000      9824.903326         0.000000 0 /
+    kworker/0:2H 21943 9544445093.970347    164367   100         0.000000      2411.914426         0.000000 0 /
+     kworker/0:1 27894 9543772567.318454         2   120         0.000000         0.005614         0.000000 0 /
+   kworker/u49:2 28236 9544444844.769242         4   120         0.000000         0.046067         0.000000 0 /
+    kworker/0:1H 24542 9544449950.689258     19267   100         0.000000       233.606971         0.000000 0 /
+  likwid-accessD 26575 9544449394.775426         3   120         0.000000         0.833114         0.000000 0 /
+  likwid-accessD 26576 9544449407.398065       132   120         0.000000         0.708938         0.000000 0 /
+
+cpu#1, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8874787309
+  .nr_load_updates               : 2570652787
+  .nr_uninterruptible            : -7269
+  .next_balance                  : 7347.711972
+  .curr->pid                     : 0
+  .clock                         : 3052922166.037283
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[1]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9829230142.656611
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 284780179.971273
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 68
+  .avg->runnable_avg_period      : 46692
+
+rt_rq[1]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.010821
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/1    12        -2.647673    763265     0         0.000000      9718.251433         0.000000 0 /
+     migration/1    13         0.000000    387781     0         0.000000      2485.610709         0.000000 0 /
+     ksoftirqd/1    14 9829230130.659899   3286746   120         0.000000     13369.059202         0.000000 0 /
+    kworker/1:0H    16      2750.631907         9   100         0.000000         0.050264         0.000000 0 /
+       scsi_eh_0   367      2649.569262        22   120         0.000000         0.343899         0.000000 0 /
+           gmond   825 9829230115.705841    368470   120         0.000000    134791.415782         0.000000 0 /
+          ypbind   856 9829230117.433638    308749   120         0.000000     21036.105708         0.000000 0 /
+    kworker/1:1H   889 9829229546.428740      6066   100         0.000000       305.988208         0.000000 0 /
+       automount   901 9829230115.571075    244860   120         0.000000      7322.848749         0.000000 0 /
+          agetty   934      2753.694643        13   120         0.000000         3.545361         0.000000 0 /
+           crond   940 9829230116.037615     51792   120         0.000000      3031.049332         0.000000 0 /
+   ptlrpcd_00_00  1124 9829230130.663143   3327362   120         0.000000     30551.169269         0.000000 0 /
+         pbs_mom  1370 9829230130.768205   3488517   120         0.000000   1730531.032479         0.000000 0 /
+      ldlm_bl_14  2465 9828816059.242834      7665   120         0.000000       765.221466         0.000000 0 /
+      ldlm_bl_15  2466 9828808569.037250     26391   120         0.000000      1452.024789         0.000000 0 /
+     kworker/1:1 30145 9829230130.386548    703921   120         0.000000      6817.599252         0.000000 0 /
+     kworker/1:0 24925 9826952248.895476         5   120         0.000000         0.064299         0.000000 0 /
+  likwid-accessD 26578 9829230130.244756         3   120         0.000000         0.861360         0.000000 0 /
+  likwid-accessD 26579 9829230142.614769        41   120         0.000000         0.472815         0.000000 0 /
+
+cpu#2, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8795150613
+  .nr_load_updates               : 2432134439
+  .nr_uninterruptible            : -3955
+  .next_balance                  : 7347.711978
+  .curr->pid                     : 0
+  .clock                         : 3052922173.049330
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[2]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9662617328.512651
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 118167365.827313
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 168
+  .avg->runnable_avg_period      : 46164
+
+rt_rq[2]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.007349
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/2    17        -5.958485    763264     0         0.000000      6652.801932         0.000000 0 /
+     migration/2    18         0.000000    413682     0         0.000000      2707.598448         0.000000 0 /
+     ksoftirqd/2    19 9662617302.874033    181029   120         0.000000      1857.604502         0.000000 0 /
+    kworker/2:0H    21     12353.291441         8   100         0.000000         0.150679         0.000000 0 /
+         rpcbind   360 9662617281.094781    101819   120         0.000000      3439.914028         0.000000 0 /
+ kiblnd_sd_00_02  1094 9662617281.144888    684717   120         0.000000     10770.991633         0.000000 0 /
+   ptlrpcd_00_08  1132 9662617316.523422   3340711   120         0.000000     31213.416840         0.000000 0 /
+    kworker/2:1H  7489 9662616117.839382      4713   100         0.000000       168.829868         0.000000 0 /
+      ldlm_bl_03  7497 9662214256.341924     97584   120         0.000000       797.861525         0.000000 0 /
+      ldlm_bl_06 29327 9662214256.352059     45916   120         0.000000      1339.704208         0.000000 0 /
+   kworker/u49:0 26214 9662615102.495391     11948   120         0.000000      5013.962103         0.000000 0 /
+     kworker/2:1 22031 9662617303.380734    807626   120         0.000000      9046.480151         0.000000 0 /
+     kworker/2:0 22856 9662615631.837881         7   120         0.000000         0.071412         0.000000 0 /
+  likwid-accessD 26580 9662617315.911277         3   120         0.000000         0.640758         0.000000 0 /
+  likwid-accessD 26581 9662617328.208639        41   120         0.000000         0.370751         0.000000 0 /
+
+cpu#3, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8917059666
+  .nr_load_updates               : 2563580741
+  .nr_uninterruptible            : -2717
+  .next_balance                  : 7347.711988
+  .curr->pid                     : 0
+  .clock                         : 3052922182.060009
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 993310
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[3]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9807935318.534967
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 263485355.849629
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 4
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 224
+  .avg->runnable_avg_period      : 46108
+
+rt_rq[3]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.007439
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/3    22        -5.958284    763264     0         0.000000      6696.767953         0.000000 0 /
+     migration/3    23         0.000000    363501     0         0.000000      2184.516829         0.000000 0 /
+     ksoftirqd/3    24 9807935253.324014    135083   120         0.000000      1368.662812         0.000000 0 /
+    kworker/3:0H    26       253.834829         8   100         0.000000         0.040876         0.000000 0 /
+       scsi_eh_4   375       254.587113        22   120         0.000000         6.507775         0.000000 0 /
+       scsi_eh_5   377       254.631098        22   120         0.000000         6.511286         0.000000 0 /
+        rsyslogd   429 9807932917.248678      5093   120         0.000000       166.456838         0.000000 0 /
+    in:imjournal   440 9807935293.772847   3551294   120         0.000000    149939.617986         0.000000 0 /
+       rpc.statd   865 9807934477.631462       137   120         0.000000        48.865614         0.000000 0 /
+    kworker/3:1H   890 9807553837.391200      5898   100         0.000000       285.440437         0.000000 0 /
+       automount   900 9807935289.626097     81552   120         0.000000      2684.379580         0.000000 0 /
+       automount   905       256.002013         7   120         0.000000         2.072819         0.000000 0 /
+  socknal_reaper  1108 9807935309.219712 3050184832   120         0.000000  31224341.734209         0.000000 0 /
+   ptlrpcd_00_02  1126 9807935306.537856   3317322   120         0.000000     30866.684477         0.000000 0 /
+   ptlrpcd_00_09  1133 9807935306.544787   3344635   120         0.000000     31165.845068         0.000000 0 /
+      sptlrpc_gc  1149 9807934338.565115      1698   120         0.000000        34.038099         0.000000 0 /
+         pbs_mom  1374 9807934477.707761      2115   120         0.000000        43.248051         0.000000 0 /
+     kworker/3:2   972 9807934723.274861         6   120         0.000000         0.159197         0.000000 0 /
+     kworker/3:1  2902 9807934723.265314     48203   120         0.000000       369.526029         0.000000 0 /
+     kworker/3:0 24415 9807935293.630675      1309   120         0.000000        11.643122         0.000000 0 /
+  likwid-accessD 26582 9807935306.187920         3   120         0.000000         0.688344         0.000000 0 /
+  likwid-accessD 26584 9807935318.534967        40   120         0.000000         0.423187         0.000000 0 /
+
+cpu#4, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8706002238
+  .nr_load_updates               : 2584990265
+  .nr_uninterruptible            : -2638
+  .next_balance                  : 7347.711988
+  .curr->pid                     : 0
+  .clock                         : 3052922182.053798
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 1
+  .cpu_load[2]                   : 24
+  .cpu_load[3]                   : 64
+  .cpu_load[4]                   : 74
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[4]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9828642045.669448
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 284192082.984110
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 623
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 1721
+  .avg->runnable_avg_period      : 46464
+
+rt_rq[4]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.006630
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/4    27        -8.958519    763264     0         0.000000      6659.314938         0.000000 0 /
+     migration/4    28         0.000000    338356     0         0.000000      2128.160640         0.000000 0 /
+     ksoftirqd/4    29 9828641907.387240    107412   120         0.000000      1121.853414         0.000000 0 /
+    kworker/4:0H    31      6782.984459         8   100         0.000000         0.044174         0.000000 0 /
+   rs:main Q:Reg   441 9828642020.823793    547831   120         0.000000     27842.983679         0.000000 0 /
+ kiblnd_sd_00_01  1093 9828642017.613751    685030   120         0.000000     10826.593120         0.000000 0 /
+   ptlrpcd_00_01  1125 9828642033.673274   3337780   120         0.000000     30256.306292         0.000000 0 /
+   ptlrpcd_00_06  1130 9828642033.677722   3320033   120         0.000000     31055.112244         0.000000 0 /
+    kworker/4:1H  7488 9828248759.224285      5690   100         0.000000       285.839291         0.000000 0 /
+     kworker/4:0 23866 9828642020.792578    815481   120         0.000000      7946.966265         0.000000 0 /
+   ldlm_cb00_007 30154 9828262464.531880        71   120         0.000000         2.613173         0.000000 0 /
+     kworker/4:2  2030 9828248760.358869       194   120         0.000000         1.169188         0.000000 0 /
+          python 24156 9828641972.494898      3123   120         0.000000       151.342565         0.000000 0 /
+            bash 25662 9828642034.374661       147   120         0.000000        81.860909         0.000000 0 /
+  likwid-accessD 26587 9828642033.365429         3   120         0.000000         0.671240         0.000000 0 /
+  likwid-accessD 26588 9828642045.669448        40   120         0.000000         0.385911         0.000000 0 /
+            bash 26635 9828642035.307972        15   120         0.000000         4.576412         0.000000 0 /
+
+cpu#5, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8847817578
+  .nr_load_updates               : 2592328698
+  .nr_uninterruptible            : -2141
+  .next_balance                  : 7347.711987
+  .curr->pid                     : 0
+  .clock                         : 3052922182.049532
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[5]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9846221505.964552
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 301771543.279214
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 788
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 135
+  .avg->runnable_avg_period      : 47305
+
+rt_rq[5]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.006885
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/5    32        -8.958954    763264     0         0.000000      6645.825777         0.000000 0 /
+     migration/5    33         0.000000    308160     0         0.000000      2002.135558         0.000000 0 /
+     ksoftirqd/5    34 9846221414.517205     72017   120         0.000000       849.445116         0.000000 0 /
+    kworker/5:0H    36      6860.954149         8   100         0.000000         0.236904         0.000000 0 /
+   ptlrpcd_00_05  1129 9846221493.795754   3358415   120         0.000000     31857.349975         0.000000 0 /
+  ll_cfg_requeue  1160       196.839002        10   120         0.000000         0.538438         0.000000 0 /
+    kworker/5:1H  7494 9843038573.407863      5259   100         0.000000       225.954907         0.000000 0 /
+   ldlm_cb00_003 20066 9845839876.167009       509   120         0.000000        15.643055         0.000000 0 /
+   ldlm_cb00_005   983 9845832923.496259       515   120         0.000000        16.287820         0.000000 0 /
+   ldlm_cb00_006  6241 9845839876.323920       528   120         0.000000        18.103103         0.000000 0 /
+      ldlm_bl_11 10334 9845839876.205595     93692   120         0.000000      1658.285105         0.000000 0 /
+     kworker/5:1 31837 9846221480.587658    683480   120         0.000000      6571.930065         0.000000 0 /
+     kworker/5:0 21593 9845851493.809590         3   120         0.000000         0.063344         0.000000 0 /
+   kworker/u49:1 23898 9846221480.559975        21   120         0.000000         0.842695         0.000000 0 /
+  likwid-accessD 26589 9846221493.447133         3   120         0.000000         0.681364         0.000000 0 /
+  likwid-accessD 26591 9846221505.782150        39   120         0.000000         0.409303         0.000000 0 /
+
+cpu#6, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8894332217
+  .nr_load_updates               : 2617505848
+  .nr_uninterruptible            : 2508
+  .next_balance                  : 7347.711988
+  .curr->pid                     : 0
+  .clock                         : 3052922182.061564
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 8
+  .cpu_load[4]                   : 15
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[6]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9880800284.445327
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 336350321.759989
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 12
+  .avg->runnable_avg_period      : 48420
+
+rt_rq[6]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.006400
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+        kthreadd     2 9880800150.632433     55661   120         0.000000      2118.724316         0.000000 1 /
+      watchdog/6    37        -8.966914    763264     0         0.000000      6955.077942         0.000000 1 /
+     migration/6    38         0.000000    429600     0         0.000000      3926.724899         0.000000 1 /
+     ksoftirqd/6    39 9880795482.541366     87536   120         0.000000       756.261757         0.000000 1 /
+    kworker/6:0H    41 9877565894.872233      6709   100         0.000000       380.487661         0.000000 1 /
+     dbus-daemon   420 9880800258.422922   2360227   120         0.000000    279684.463332         0.000000 1 /
+   kworker/u53:0   649       106.901526         3   100         0.000000         0.011596         0.000000 1 /
+   ptlrpcd_01_02  1138 9880800272.453776   3276833   120         0.000000     36303.182467         0.000000 1 /
+   ldlm_cb01_001  1156 9880421241.060774      1325   120         0.000000        59.149286         0.000000 1 /
+      ldlm_bl_01  1157 9880397379.072542    121167   120         0.000000      1628.315029         0.000000 1 /
+    kworker/6:1H  7492      8170.828727         2   100         0.000000         0.027356         0.000000 1 /
+      ldlm_bl_13  2464 9880800256.447654     20353   120         0.000000      1309.230124         0.000000 1 /
+     kworker/6:2  3008 9880800259.132484     24925   120         0.000000       187.691471         0.000000 1 /
+     kworker/6:1 31006 9880441912.858717         3   120         0.000000         0.061739         0.000000 1 /
+   kworker/u48:0 24416 9880800272.458178       152   120         0.000000         3.778931         0.000000 1 /
+  likwid-accessD 26593 9880800271.889083         3   120         0.000000         0.833260         0.000000 1 /
+  likwid-accessD 26594 9880800284.445327        64   120         0.000000         0.640184         0.000000 1 /
+
+cpu#7, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8814391409
+  .nr_load_updates               : 2593948815
+  .nr_uninterruptible            : 241
+  .next_balance                  : 7347.711988
+  .curr->pid                     : 0
+  .clock                         : 3052922182.058067
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 41
+  .cpu_load[2]                   : 146
+  .cpu_load[3]                   : 181
+  .cpu_load[4]                   : 154
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[7]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9856813808.255348
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 312363845.570010
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 21
+  .avg->runnable_avg_period      : 48318
+
+rt_rq[7]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.007240
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/7    43        -8.965340    763264     0         0.000000      6174.013532         0.000000 1 /
+     migration/7    44         0.000000    307080     0         0.000000      2384.821688         0.000000 1 /
+     ksoftirqd/7    45 9856811686.325848     71781   120         0.000000       748.264699         0.000000 1 /
+    kworker/7:0H    47      9289.526833         8   100         0.000000         0.200681         0.000000 1 /
+      khugepaged   149 9856813788.168290    322781   139         0.000000     90758.653441         0.000000 1 /
+        gssproxy   427 9856813731.059149    101694   120         0.000000      2699.068361         0.000000 1 /
+          agetty   935       104.463973        44   120         0.000000        14.215899         0.000000 1 /
+   ldlm_cb01_000  1155 9856381008.898864      4059   120         0.000000       153.015318         0.000000 1 /
+    kworker/7:1H  7496 9856376785.524527      6538   100         0.000000       363.731675         0.000000 1 /
+   ldlm_cb01_003 20063 9856381008.455338      2285   120         0.000000        76.261772         0.000000 1 /
+      ldlm_bl_12 16025 9856417733.420933     97651   120         0.000000      1823.488142         0.000000 1 /
+      ldlm_bl_18  1218 9856414308.870536       396   120         0.000000         2.009618         0.000000 1 /
+     kworker/7:2  3145 9856813783.432995     22118   120         0.000000       179.170366         0.000000 1 /
+     kworker/7:1  5925 9856813720.839852         4   120         0.000000         0.068859         0.000000 1 /
+   kworker/u48:2 13049 9856813796.285815      2770   120         0.000000        69.134195         0.000000 1 /
+     kworker/7:0 24993 9856813732.823562         3   120         0.000000         0.083145         0.000000 1 /
+  likwid-perfctr 26561 9856813803.726137      1409   120         0.000000        53.423775         0.000000 1 /
+  likwid-accessD 26595 9856813796.004180         3   120         0.000000         0.591256         0.000000 1 /
+  likwid-accessD 26596 9856813808.255348        41   120         0.000000         0.327629         0.000000 1 /
+
+cpu#8, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8953892583
+  .nr_load_updates               : 2595132583
+  .nr_uninterruptible            : -1175
+  .next_balance                  : 7347.711987
+  .curr->pid                     : 0
+  .clock                         : 3052922181.029017
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[8]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9875671638.384962
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 331221675.699624
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 87
+  .avg->runnable_avg_period      : 47140
+
+rt_rq[8]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.010764
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+         systemd     1 9875671616.340291   1590269   120         0.000000    547615.848414         0.000000 1 /
+       rcu_sched    10 9875671626.430123  79806700   120         0.000000   1270671.105437         0.000000 1 /
+      watchdog/8    48       -11.965989    763264     0         0.000000      6159.499341         0.000000 1 /
+     migration/8    49         0.000000    274120     0         0.000000      2586.856113         0.000000 1 /
+     ksoftirqd/8    50 9875671626.145775     74148   120         0.000000       866.201981         0.000000 1 /
+    kworker/8:0H    52      8297.821466         9   100         0.000000         0.091572         0.000000 1 /
+   ptlrpcd_01_11  1147 9875671626.321489   3290623   120         0.000000     35451.173155         0.000000 1 /
+    kworker/8:1H  7493 9875670435.574157      6604   100         0.000000       387.268880         0.000000 1 /
+     kworker/8:2  1198 9875671613.901107     42433   120         0.000000       318.059739         0.000000 1 /
+     kworker/8:1 21240 9875669742.453289         4   120         0.000000         0.069526         0.000000 1 /
+   kworker/u48:1 22744 9875670865.180905       716   120         0.000000        18.546544         0.000000 1 /
+     kworker/8:0 23000 9875669754.431669         2   120         0.000000         0.032422         0.000000 1 /
+            bash 24006 9875670363.257814        55   120         0.000000        12.835289         0.000000 1 /
+        workflow 24053 9875670395.664903       184   120         0.000000        65.830264         0.000000 1 /
+        workflow 25601 9875671299.036234        96   120         0.000000        56.991590         0.000000 1 /
+  likwid-accessD 26597 9875671625.979623         4   120         0.000000         0.644440         0.000000 1 /
+  likwid-accessD 26598 9875671638.312844        40   120         0.000000         0.412072         0.000000 1 /
+
+cpu#9, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8790539134
+  .nr_load_updates               : 2597698898
+  .nr_uninterruptible            : -829
+  .next_balance                  : 7347.711620
+  .curr->pid                     : 0
+  .clock                         : 3052921814.015435
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 128
+  .cpu_load[2]                   : 157
+  .cpu_load[3]                   : 220
+  .cpu_load[4]                   : 314
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[9]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9867582746.717407
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 323132784.032069
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 8
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 150
+  .avg->runnable_avg_period      : 46871
+
+rt_rq[9]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.010208
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+      watchdog/9    53       -11.965298    763264     0         0.000000      6176.000525         0.000000 1 /
+     migration/9    54         0.000000    251055     0         0.000000      2239.668218         0.000000 1 /
+     ksoftirqd/9    55 9867582734.736385     74909   120         0.000000       888.267684         0.000000 1 /
+    kworker/9:0H    57     11447.928896         8   100         0.000000         0.056294         0.000000 1 /
+   systemd-udevd   272 9867581184.863783      1070   120         0.000000       195.309178         0.000000 1 /
+       scsi_eh_3   373       166.235747        22   120         0.000000         6.361548         0.000000 1 /
+       automount   928 9867581173.942420       373   120         0.000000        20.295592         0.000000 1 /
+        cmetricd   908 9867582648.410248    300662   120         0.000000     98320.220094         0.000000 1 /
+ kiblnd_sd_01_01  1097 9867582671.237592   1461114   120         0.000000     27261.361236         0.000000 1 /
+   ptlrpcd_01_01  1137 9867582734.726679   3291685   120         0.000000     36355.857743         0.000000 1 /
+      ldlm_bl_02  1158 9867229491.676181    101901   120         0.000000      2133.670692         0.000000 1 /
+ gangliametrics.  1207 9867582734.755699   4276031   120         0.000000    484394.392010         0.000000 1 /
+    kworker/9:1H  7486 9867581230.941912      5991   100         0.000000       281.912597         0.000000 1 /
+      ldlm_bl_09 29722 9867229491.674432     64508   120         0.000000      1734.736890         0.000000 1 /
+     kworker/9:0  2971 9867582719.754992     26895   120         0.000000       206.453781         0.000000 1 /
+     kworker/9:2 16395 9867518317.828729         4   120         0.000000         0.037240         0.000000 1 /
+            bash 23479 9867581201.466017       115   120         0.000000        25.744680         0.000000 1 /
+  likwid-accessD 26599 9867582732.285504         3   120         0.000000         0.625677         0.000000 1 /
+  likwid-accessD 26600 9867582744.545790        42   120         0.000000         0.333984         0.000000 1 /
+
+cpu#10, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8897449658
+  .nr_load_updates               : 2596705273
+  .nr_uninterruptible            : -702
+  .next_balance                  : 7347.711620
+  .curr->pid                     : 0
+  .clock                         : 3052921814.022272
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 4
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[10]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9840164988.926104
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 295715026.240766
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 8
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 22
+  .avg->runnable_avg_period      : 47664
+
+rt_rq[10]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.004381
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/10    58       -11.965196    763264     0         0.000000      7030.062635         0.000000 1 /
+    migration/10    59         0.000000    221687     0         0.000000      2194.876954         0.000000 1 /
+    ksoftirqd/10    60 9840164961.231168     66421   120         0.000000       723.949115         0.000000 1 /
+   kworker/10:0H    62      8320.636018         9   100         0.000000         1.036026         0.000000 1 /
+       kdevtmpfs   130       253.126739       202   120         0.000000         2.336906         0.000000 1 /
+ systemd-journal   244 9840164962.624573    390503   120         0.000000    194352.893259         0.000000 1 /
+      provisiond   898 9840163865.832714    578148   120         0.000000     22471.440274         0.000000 1 /
+   ptlrpcd_01_05  1141 9840164976.939490   3291259   120         0.000000     35399.386033         0.000000 1 /
+   ptlrpcd_01_08  1144 9840164976.928922   3278000   120         0.000000     36314.565942         0.000000 1 /
+   kworker/10:1H  7490 9839792143.711274      6336   100         0.000000       312.385781         0.000000 1 /
+      ldlm_bl_16  2467 9839810406.806980     59330   120         0.000000       948.394342         0.000000 1 /
+   kworker/u50:2 17127 9839792046.632786         3   120         0.000000         0.108067         0.000000 1 /
+    kworker/10:0  2922 9840164964.062310     26208   120         0.000000       195.925551         0.000000 1 /
+    kworker/10:2 22300 9840163454.341893         8   120         0.000000         0.115636         0.000000 1 /
+  likwid-accessD 26601 9840164976.612340         3   120         0.000000         0.649308         0.000000 1 /
+  likwid-accessD 26602 9840164988.926104        39   120         0.000000         0.385975         0.000000 1 /
+
+cpu#11, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 8944253477
+  .nr_load_updates               : 2569662430
+  .nr_uninterruptible            : -843
+  .next_balance                  : 7347.711907
+  .curr->pid                     : 0
+  .clock                         : 3052922101.049104
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[11]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 9808651263.231743
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : 264201300.546405
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 23
+  .avg->runnable_avg_period      : 46321
+
+rt_rq[11]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.003870
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/11    63       -11.966402    763264     0         0.000000      5917.609045         0.000000 1 /
+    migration/11    64         0.000000    227867     0         0.000000      2295.079134         0.000000 1 /
+    ksoftirqd/11    65 9808651187.669922     85031   120         0.000000      1012.737398         0.000000 1 /
+   kworker/11:0H    67 9808276740.793795      6358   100         0.000000       345.786242         0.000000 1 /
+           gmond   844 9808651251.285204  30593966   120         0.000000    658043.582494         0.000000 1 /
+    kiblnd_connd  1091 9808651231.089874   3053012   120         0.000000     56643.480172         0.000000 1 /
+ kiblnd_sd_01_00  1096 9808651216.621548   1457300   120         0.000000     27268.288303         0.000000 1 /
+     ptlrpcd_rcv  1123 9808651251.243215   3053013   120         0.000000     55842.025295         0.000000 1 /
+   ptlrpcd_01_06  1142 9808651251.240961   3275668   120         0.000000     35711.410392         0.000000 1 /
+      ldlm_poold  1159 9808651229.755083    611954   120         0.000000     28260.068066         0.000000 1 /
+         pbs_mom  1375 9808650407.430601      2114   120         0.000000        32.083060         0.000000 1 /
+   kworker/11:1H  7491      8542.187103         2   100         0.000000         0.010593         0.000000 1 /
+      ldlm_bl_08 29721 9808289895.593240    125502   120         0.000000      1427.309371         0.000000 1 /
+   ldlm_cb01_006 24874 9808289895.535248      3951   120         0.000000       124.897849         0.000000 1 /
+   kworker/u50:1 24254 9808651187.913666     20899   120         0.000000      6872.810214         0.000000 1 /
+    kworker/11:1  2963 9808650399.249120    432096   120         0.000000      4690.882146         0.000000 1 /
+    kworker/11:2 19317 9808650067.534225         4   120         0.000000         0.073548         0.000000 1 /
+    kworker/11:0 23257 9808651231.088808      9922   120         0.000000        70.911773         0.000000 1 /
+  likwid-accessD 26603 9808651243.660804         3   120         0.000000         0.645721         0.000000 1 /
+  likwid-accessD 26604 9808651255.919626        38   120         0.000000         0.337643         0.000000 1 /
+
+cpu#12, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 404542008
+  .nr_load_updates               : 1337000401
+  .nr_uninterruptible            : 879
+  .next_balance                  : 7347.711427
+  .curr->pid                     : 0
+  .clock                         : 3052921814.017954
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 8
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[12]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 1137965495.843983
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8406484466.841355
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 9
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 19
+  .avg->runnable_avg_period      : 47281
+
+rt_rq[12]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.008816
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/12    68       -11.967724    763264     0         0.000000      9307.332880         0.000000 0 /
+    migration/12    69         0.000000    952475     0         0.000000     11168.629217         0.000000 0 /
+    ksoftirqd/12    70 1137965062.174035   1441664   120         0.000000     27318.938140         0.000000 0 /
+   kworker/12:0H    72      1745.836395         8   100         0.000000         0.040094         0.000000 0 /
+         ata_sff   355        86.054214         2   100         0.000000         0.016559         0.000000 0 /
+ kiblnd_sd_00_00  1092 1137965470.026968    683030   120         0.000000     10796.707690         0.000000 0 /
+   ptlrpcd_00_04  1128 1137965483.852988   3315903   120         0.000000     31099.628438         0.000000 0 /
+   kworker/12:1H  7487 1135554535.131683      4370   100         0.000000       376.591914         0.000000 0 /
+      ldlm_bl_17  2468 1137330115.117923     25130   120         0.000000       907.964381         0.000000 0 /
+    kworker/12:0 26293 1137965470.196050     99685   120         0.000000      1521.222054         0.000000 0 /
+    kworker/12:1  4848 1137321662.114516         2   120         0.000000         0.032716         0.000000 0 /
+  likwid-accessD 26606 1137965483.496419         3   120         0.000000         0.960178         0.000000 0 /
+  likwid-accessD 26607 1137965495.843983        35   120         0.000000         0.453736         0.000000 0 /
+
+cpu#13, 2666.869 MHz
+  .nr_running                    : 1
+  .load                          : 1024
+  .nr_switches                   : 580670231
+  .nr_load_updates               : 1450208711
+  .nr_uninterruptible            : 4078
+  .next_balance                  : 7347.711987
+  .curr->pid                     : 26642
+  .clock                         : 3052922181.986278
+  .cpu_load[0]                   : 1024
+  .cpu_load[1]                   : 662
+  .cpu_load[2]                   : 533
+  .cpu_load[3]                   : 437
+  .cpu_load[4]                   : 318
+  .avg_idle                      : 742259
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[13]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 937672226.085638
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8606777736.599700
+  .nr_spread_over                : 0
+  .nr_running                    : 1
+  .load                          : 1024
+  .runnable_load_avg             : 980
+  .blocked_load_avg              : 2511
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 3901
+  .avg->runnable_avg_period      : 46803
+
+rt_rq[13]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.006237
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/13    73       -11.958543    763264     0         0.000000      8625.133230         0.000000 0 /
+    migration/13    74         0.000000    515698     0         0.000000      4129.526944         0.000000 0 /
+    ksoftirqd/13    75 937672149.129325    172588   120         0.000000      3455.624792         0.000000 0 /
+   kworker/13:0H    77      4397.551119         8   100         0.000000         0.069264         0.000000 0 /
+     mlx4_health   357      1435.568774         2   100         0.000000         0.007485         0.000000 0 /
+      scsi_tmf_0   368      1494.852737         2   100         0.000000         0.006640         0.000000 0 /
+      scsi_tmf_1   370      1518.861206         2   100         0.000000         0.004353         0.000000 0 /
+      scsi_tmf_3   374      1554.951035         2   100         0.000000         0.059075         0.000000 0 /
+      scsi_tmf_4   376      1579.033444         2   100         0.000000         0.038478         0.000000 0 /
+        gssproxy   432      1685.597965         1   120         0.000000         0.043707         0.000000 0 /
+          ypbind   853      3127.450807         1   120         0.000000         0.111105         0.000000 0 /
+   kworker/13:1H  1263 937638049.628334      1585   100         0.000000        81.077266         0.000000 0 /
+    kworker/13:0 17350 937637116.922293    333071   120         0.000000      5206.666936         0.000000 0 /
+    kworker/13:1  3124 937637107.330267       478   120         0.000000         4.485685         0.000000 0 /
+    kworker/13:2 24256 937672213.738767      2581   120         0.000000        31.425295         0.000000 0 /
+  likwid-accessD 26610 937672128.714928         3   120         0.000000         0.626594         0.000000 0 /
+  likwid-accessD 26611 937672173.478956        40   120         0.000000         0.459008         0.000000 0 /
+R            cat 26642 937672226.085638         3   120         0.000000         1.236395         0.000000 0 /
+
+cpu#14, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 635517592
+  .nr_load_updates               : 1645069215
+  .nr_uninterruptible            : 2001
+  .next_balance                  : 7347.711978
+  .curr->pid                     : 0
+  .clock                         : 3052922173.049335
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[14]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 1093121296.879672
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8451328665.805666
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 0
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 262
+  .avg->runnable_avg_period      : 46778
+
+rt_rq[14]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.005257
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/14    78       -11.958860    763264     0         0.000000      8363.354953         0.000000 0 /
+    migration/14    79         0.000000    406566     0         0.000000      3558.140570         0.000000 0 /
+    ksoftirqd/14    80 1093121132.422248     76965   120         0.000000      1356.985473         0.000000 0 /
+   kworker/14:0H    82      1251.186610         8   100         0.000000         0.059794         0.000000 0 /
+ kvm-irqfd-clean   358       387.217894         2   100         0.000000         0.010782         0.000000 0 /
+        gssproxy   434       554.313854         1   120         0.000000         0.044426         0.000000 0 /
+       cfs_rh_00  1039       941.317889         2   120         0.000000         0.070970         0.000000 0 /
+ ptlrpc_hr00_001  1071       963.705181         2   120         0.000000         0.044206         0.000000 0 /
+ ptlrpc_hr00_003  1073       975.754699         2   120         0.000000         0.049524         0.000000 0 /
+   ptlrpcd_00_11  1135 1093121272.592992   3345977   120         0.000000     30890.251370         0.000000 0 /
+   ldlm_cb00_000  1152 1091740976.466115       622   120         0.000000        18.729995         0.000000 0 /
+   kworker/14:1H  1953 1092235957.220183      2013   100         0.000000       108.908934         0.000000 0 /
+   ldlm_cb00_002  7510 1091740976.327918       517   120         0.000000        13.178780         0.000000 0 /
+    kworker/14:2 22202 1093121247.655627    159549   120         0.000000      2196.501902         0.000000 0 /
+    kworker/14:1 20734 1092402449.474360         2   120         0.000000         0.006342         0.000000 0 /
+  likwid-accessD 26612 1093121272.309996         3   120         0.000000         0.648779         0.000000 0 /
+  likwid-accessD 26613 1093121284.585150        39   120         0.000000         0.353061         0.000000 0 /
+
+cpu#15, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 569568219
+  .nr_load_updates               : 1473697070
+  .nr_uninterruptible            : 670
+  .next_balance                  : 7347.711986
+  .curr->pid                     : 0
+  .clock                         : 3052922180.065381
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 6
+  .cpu_load[3]                   : 23
+  .cpu_load[4]                   : 26
+  .avg_idle                      : 897808
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[15]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 938637909.153232
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8605812053.532106
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 782
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 711
+  .avg->runnable_avg_period      : 47104
+
+rt_rq[15]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.004294
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/15    83       -11.959929    763264     0         0.000000      8390.339789         0.000000 0 /
+    migration/15    84         0.000000    396229     0         0.000000      3295.793535         0.000000 0 /
+    ksoftirqd/15    85 938637792.577729     48038   120         0.000000       936.487567         0.000000 0 /
+   kworker/15:0H    87      1464.434013         8   100         0.000000         0.079845         0.000000 0 /
+         rdma_cm   598       323.229917         2   100         0.000000         0.040202         0.000000 0 /
+     ipoib_flush   620       335.283480         2   100         0.000000         0.055825         0.000000 0 /
+       automount   899       399.466252         8   120         0.000000         2.891913         0.000000 0 /
+       cfs_rh_03  1042       448.832632         2   120         0.000000         0.037077         0.000000 0 /
+   ptlrpcd_00_10  1134 938637896.214616   3326332   120         0.000000     30622.046790         0.000000 0 /
+   kworker/15:1H  7485 938637724.180010      1641   100         0.000000       116.591589         0.000000 0 /
+    kworker/15:0 29436 938637823.066811     71431   120         0.000000      1028.584465         0.000000 0 /
+    kworker/15:2 22723 938637019.525247         2   120         0.000000         0.024265         0.000000 0 /
+  likwid-accessD 26614 938637859.817672         2   120         0.000000         0.696154         0.000000 0 /
+  likwid-accessD 26615 938637896.311404        36   120         0.000000         0.377464         0.000000 0 /
+
+cpu#16, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 588510220
+  .nr_load_updates               : 1470316819
+  .nr_uninterruptible            : 799
+  .next_balance                  : 7347.711441
+  .curr->pid                     : 0
+  .clock                         : 3052921814.016637
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[16]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 904037411.715039
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8640412550.970299
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 11
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 19
+  .avg->runnable_avg_period      : 47738
+
+rt_rq[16]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.005304
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/16    88       -11.959053    763264     0         0.000000      8372.414180         0.000000 0 /
+    migration/16    89         0.000000    390963     0         0.000000      3209.425945         0.000000 0 /
+    ksoftirqd/16    90 904037382.435341     44600   120         0.000000       800.899260         0.000000 0 /
+   kworker/16:0H    92     38128.710971         8   100         0.000000         0.033033         0.000000 0 /
+       kpsmoused   173        34.965738         2   100         0.000000         0.005565         0.000000 0 /
+      ib-comp-wq   548       449.853160         2   100         0.000000         0.012412         0.000000 0 /
+         ib_addr   549       461.865603         2   100         0.000000         0.013522         0.000000 0 /
+        ib_mcast   550       473.874949         2   100         0.000000         0.010142         0.000000 0 /
+     ib_nl_sa_wq   551       485.884003         2   100         0.000000         0.009824         0.000000 0 /
+     mlx4_ib_mcg   554       497.922463         2   100         0.000000         0.039232         0.000000 0 /
+        iw_cm_wq   587       559.238744         2   100         0.000000         0.063196         0.000000 0 /
+        iscsi_eh   641       571.290064         2   100         0.000000         0.053177         0.000000 0 /
+   kworker/u52:0   648       595.345651         4   100         0.000000         0.020533         0.000000 0 /
+   ptlrpcd_00_03  1127 904037399.724067   3361482   120         0.000000     31059.994698         0.000000 0 /
+   ldlm_cb00_001  1154 903168502.782955       616   120         0.000000        21.980055         0.000000 0 /
+   kworker/16:1H 20503 903168823.384242      1441   100         0.000000       107.006683         0.000000 0 /
+   ldlm_cb00_004 29328 903219528.700666       620   120         0.000000        23.331860         0.000000 0 /
+    kworker/16:2 21944 904037386.368073     56462   120         0.000000       839.736307         0.000000 0 /
+    kworker/16:0 30282 903167932.147432         6   120         0.000000         0.088783         0.000000 0 /
+  likwid-accessD 26616 904037399.337553         3   120         0.000000         0.698635         0.000000 0 /
+  likwid-accessD 26617 904037411.715039        38   120         0.000000         0.458378         0.000000 0 /
+
+cpu#17, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 587661370
+  .nr_load_updates               : 1451710370
+  .nr_uninterruptible            : 686
+  .next_balance                  : 7347.711440
+  .curr->pid                     : 0
+  .clock                         : 3052921814.082593
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 1
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[17]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 877959321.659521
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8666490641.025817
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 12
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 17
+  .avg->runnable_avg_period      : 47558
+
+rt_rq[17]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.006898
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/17    93       -11.959340    763264     0         0.000000      8639.278815         0.000000 0 /
+    migration/17    94         0.000000    375176     0         0.000000      3979.547788         0.000000 0 /
+    ksoftirqd/17    95 877959180.217536     41343   120         0.000000       754.789457         0.000000 0 /
+   kworker/17:0H    97     43206.581712         8   100         0.000000         0.076650         0.000000 0 /
+   ptlrpcd_00_07  1131 877959309.667384   3344739   120         0.000000     30564.349982         0.000000 0 /
+         ll_ping  1148 877959259.353152    127365   120         0.000000     12192.803590         0.000000 0 /
+   kworker/17:1H 22232 877302384.670221      1685   100         0.000000       126.471143         0.000000 0 /
+      ldlm_bl_10  6242 877325710.751458    172234   120         0.000000      2249.866851         0.000000 0 /
+    kworker/17:1 19444 877959284.327361   3656142   120         0.000000     54201.972950         0.000000 0 /
+    kworker/17:2  1763 877958892.713943         4   120         0.000000         0.097687         0.000000 0 /
+    kworker/17:0 23134 877958904.681464         3   120         0.000000         0.060276         0.000000 0 /
+  likwid-accessD 26618 877959309.349876         3   120         0.000000         0.717856         0.000000 0 /
+  likwid-accessD 26619 877959321.659521        37   120         0.000000         0.384700         0.000000 0 /
+
+cpu#18, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 627258506
+  .nr_load_updates               : 1420351789
+  .nr_uninterruptible            : 8755
+  .next_balance                  : 7347.711620
+  .curr->pid                     : 0
+  .clock                         : 3052921814.041580
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 1
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[18]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 877816381.949178
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8666633580.736160
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 12
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 20
+  .avg->runnable_avg_period      : 47229
+
+rt_rq[18]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.005608
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/18    98       -11.968453    763264     0         0.000000      8401.320118         0.000000 1 /
+    migration/18    99         0.000000   1057097     0         0.000000     11028.734263         0.000000 1 /
+    ksoftirqd/18   100 877816237.494047    102347   120         0.000000      2000.561370         0.000000 1 /
+   kworker/18:0H   102     14988.811375         8   100         0.000000         0.102340         0.000000 1 /
+ kiblnd_sd_01_03  1099 877816221.188707   1459312   120         0.000000     27349.190809         0.000000 1 /
+   ptlrpcd_01_04  1140 877816369.957206   3275759   120         0.000000     35887.533694         0.000000 1 /
+   kworker/18:1H  9801 877179427.580418      1797   100         0.000000       152.006597         0.000000 1 /
+    kworker/18:2  5420 877816344.860487     65889   120         0.000000       826.288309         0.000000 1 /
+    kworker/18:0 10513 877186807.333155         2   120         0.000000         0.056184         0.000000 1 /
+              su 26516 877816254.140470         6   120         0.000000         5.173114         0.000000 1 /
+  likwid-accessD 26620 877816369.638283         3   120         0.000000         0.780181         0.000000 1 /
+  likwid-accessD 26621 877816381.949178        40   120         0.000000         0.400699         0.000000 1 /
+
+cpu#19, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 552951732
+  .nr_load_updates               : 1460652636
+  .nr_uninterruptible            : 6431
+  .next_balance                  : 7347.711981
+  .curr->pid                     : 0
+  .clock                         : 3052922179.888682
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 8
+  .cpu_load[3]                   : 43
+  .cpu_load[4]                   : 64
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[19]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 909130817.443768
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8635319145.241570
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 74
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 3196
+  .avg->runnable_avg_period      : 46802
+
+rt_rq[19]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.006825
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/19   103       -11.966126    763264     0         0.000000      7922.378843         0.000000 1 /
+    migration/19   104         0.000000    405422     0         0.000000      4087.388730         0.000000 1 /
+    ksoftirqd/19   105 909129908.801259     80424   120         0.000000      2073.202842         0.000000 1 /
+   kworker/19:0H   107      4394.580408         8   100         0.000000         0.058058         0.000000 1 /
+           netns   131       126.241182         2   100         0.000000         0.008167         0.000000 1 /
+       writeback   133 891517093.623932         4   100         0.000000         6.058198         0.000000 1 /
+     kintegrityd   134       162.260956         2   100         0.000000         0.006924         0.000000 1 /
+          bioset   135       174.265900         2   100         0.000000         0.005514         0.000000 1 /
+         kblockd   136       186.271004         2   100         0.000000         0.005669         0.000000 1 /
+              md   137       198.279958         2   100         0.000000         0.009646         0.000000 1 /
+         kswapd1   147       438.865168         3   120         0.000000         0.010004         0.000000 1 /
+            ksmd   148       330.482785         2   125         0.000000         0.008488         0.000000 1 /
+          crypto   150       354.595694         2   100         0.000000         0.007558         0.000000 1 /
+        kthrotld   158       450.861163         2   100         0.000000         0.007423         0.000000 1 /
+    kmpath_rdacd   166       534.909124         2   100         0.000000         0.009761         0.000000 1 /
+   ipv6_addrconf   176       594.940410         2   100         0.000000         0.008120         0.000000 1 /
+         deferwq   206       788.020510         2   100         0.000000         0.052261         0.000000 1 /
+          rpciod   238      1016.242137         2   100         0.000000         0.008499         0.000000 1 /
+         xprtiod   239      1028.251868         2   100         0.000000         0.011073         0.000000 1 /
+         kauditd   246      1102.387858         2   120         0.000000         0.056701         0.000000 1 /
+         mlx4_en   552      1928.061827         2   100         0.000000         0.043259         0.000000 1 /
+         mlx4_ib   553      1940.106189         2   100         0.000000         0.045730         0.000000 1 /
+         ib_mad1   557      1979.015919         2   100         0.000000         0.032999         0.000000 1 /
+           ib_cm   592      2220.570725         2   100         0.000000         0.009525         0.000000 1 /
+        ipoib_wq   621      2457.407915         2   100         0.000000         0.033612         0.000000 1 /
+      srp_remove   627      2495.826116         2   100         0.000000         0.016781         0.000000 1 /
+ target_completi   633      2545.269234         2   100         0.000000         0.009442         0.000000 1 /
+      tmr-rd_mcp   635      2557.306092         2   100         0.000000         0.038131         0.000000 1 /
+        xcopy_wq   636      2569.316991         2   100         0.000000         0.011825         0.000000 1 /
+ xprtrdma_receiv   654      2702.170787         2   100         0.000000         0.014729         0.000000 1 /
+          nfsiod   883      3867.394432         2   100         0.000000         0.009766         0.000000 1 /
+           lockd   891      3915.543605         2   120         0.000000         0.048256         0.000000 1 /
+   kworker/19:1H   965 909097776.658323      2164   100         0.000000       167.004043         0.000000 1 /
+       cfs_rh_01  1040      4827.705903         2   120         0.000000         0.047449         0.000000 1 /
+       cfs_rh_02  1041      4839.714115         2   120         0.000000         0.008218         0.000000 1 /
+      obd_zombid  1064      4961.892721         2   120         0.000000         0.033590         0.000000 1 /
+            clio  1065      4973.899404         2   100         0.000000         0.010219         0.000000 1 /
+ ptlrpc_hr01_000  1076      5034.020665         2   120         0.000000         0.008817         0.000000 1 /
+ ptlrpc_hr01_001  1077      5046.027978         2   120         0.000000         0.007319         0.000000 1 /
+ ptlrpc_hr01_002  1078      5058.034804         2   120         0.000000         0.006832         0.000000 1 /
+ ptlrpc_hr01_003  1079      5070.041703         2   120         0.000000         0.006905         0.000000 1 /
+ ptlrpc_hr01_004  1080      5082.048519         2   120         0.000000         0.006822         0.000000 1 /
+ ptlrpc_hr01_005  1081      5094.056942         2   120         0.000000         0.008429         0.000000 1 /
+  ib_fmr(mlx4_0)  1100      5214.159314         2   120         0.000000         0.008883         0.000000 1 /
+  ib_fmr(mlx4_0)  1101      5226.168935         2   120         0.000000         0.009627         0.000000 1 /
+    socknal_cd00  1104      5238.201510         2   120         0.000000         0.032581         0.000000 1 /
+    socknal_cd01  1105      5250.212693         2   120         0.000000         0.011189         0.000000 1 /
+    socknal_cd02  1106      5262.215678         2   120         0.000000         0.006363         0.000000 1 /
+    socknal_cd03  1107      5274.226219         2   120         0.000000         0.010547         0.000000 1 /
+ socknal_sd01_00  1115      5370.281725         2   120         0.000000         0.007179         0.000000 1 /
+ socknal_sd01_01  1116      5382.288300         2   120         0.000000         0.006581         0.000000 1 /
+ socknal_sd01_02  1117      5394.294998         2   120         0.000000         0.006704         0.000000 1 /
+ socknal_sd01_03  1118      5406.301375         2   120         0.000000         0.006383         0.000000 1 /
+ socknal_sd01_04  1119      5418.307867         2   120         0.000000         0.006498         0.000000 1 /
+ socknal_sd01_05  1120      5430.314386         2   120         0.000000         0.006525         0.000000 1 /
+    acceptor_000  1121      5446.096494         3   120         0.000000         3.782114         0.000000 1 /
+  router_checker  1122      5458.104333         2   120         0.000000         0.007845         0.000000 1 /
+    lc_watchdogd  1153      5806.381988         2   120         0.000000         0.008356         0.000000 1 /
+   ldlm_cb01_007 32600 905661779.230406       545   120         0.000000        17.941369         0.000000 1 /
+    kworker/19:2  6792 909096492.897840    715164   120         0.000000      9391.057098         0.000000 1 /
+   ldlm_cb01_009 10326 905661779.860534       519   120         0.000000        12.423863         0.000000 1 /
+    kworker/19:1 22057 909097915.067044        19   120         0.000000         0.158889         0.000000 1 /
+    kworker/19:0 24261 909130741.214893      2422   120         0.000000        26.382765         0.000000 1 /
+  likwid-accessD 26622 909130728.281197         3   120         0.000000         0.635471         0.000000 1 /
+  likwid-accessD 26623 909130740.570222        41   120         0.000000         0.365836         0.000000 1 /
+           sleep 26632 909130741.025177        13   120         0.000000         0.559952         0.000000 1 /
+            bash 26634 909130754.012629        12   120         0.000000         0.987458         0.000000 1 /
+
+cpu#20, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 605055683
+  .nr_load_updates               : 1448750202
+  .nr_uninterruptible            : 1816
+  .next_balance                  : 7347.711403
+  .curr->pid                     : 0
+  .clock                         : 3052921814.015060
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 1
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[20]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 894062774.374971
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8650387188.310367
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 25
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 27
+  .avg->runnable_avg_period      : 47148
+
+rt_rq[20]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.004427
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/20   108       -11.966864    763264     0         0.000000      7895.500895         0.000000 1 /
+    migration/20   109         0.000000    234945     0         0.000000      2226.586862         0.000000 1 /
+    ksoftirqd/20   110 894062660.936470     40568   120         0.000000       995.792763         0.000000 1 /
+   kworker/20:0H   112     46779.065059         8   100         0.000000         0.043630         0.000000 1 /
+     edac-poller   350       237.266750         2   100         0.000000         0.008284         0.000000 1 /
+            mlx4   356       295.388816         2   100         0.000000         0.013015         0.000000 1 /
+      scsi_tmf_2   372       323.709033         2   100         0.000000         0.037551         0.000000 1 /
+      scsi_tmf_5   378       335.715977         2   100         0.000000         0.007690         0.000000 1 /
+        ttm_swap   437       388.888517         2   100         0.000000         0.043309         0.000000 1 /
+   kworker/u51:0   647      1931.525083         4   100         0.000000         0.074530         0.000000 1 /
+  systemd-logind   872 894062653.709750   2132148   120         0.000000    140046.446421         0.000000 1 /
+   ptlrpcd_01_07  1143 894062762.383478   3287171   120         0.000000     35857.521411         0.000000 1 /
+   kworker/20:1H  1762 893628554.074077      1816   100         0.000000       168.676436         0.000000 1 /
+   ldlm_cb01_005   982 892667876.501974      1014   120         0.000000        26.480324         0.000000 1 /
+   ldlm_cb01_008  1317 893204127.742030       447   120         0.000000        11.539936         0.000000 1 /
+    kworker/20:1 29102 894062700.334981      8458   120         0.000000       101.756203         0.000000 1 /
+    kworker/20:0 27466 893535817.798139         2   120         0.000000         0.007547         0.000000 1 /
+             csh 26517 894062674.875671        36   120         0.000000        10.548997         0.000000 1 /
+  likwid-accessD 26624 894062750.089624         3   120         0.000000         0.677808         0.000000 1 /
+  likwid-accessD 26625 894062762.478502        34   120         0.000000         0.369177         0.000000 1 /
+
+cpu#21, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 489066450
+  .nr_load_updates               : 1447054641
+  .nr_uninterruptible            : 1380
+  .next_balance                  : 7347.711375
+  .curr->pid                     : 0
+  .clock                         : 3052921814.015162
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 5
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[21]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 890493895.951499
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8653956066.733839
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 15
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 22
+  .avg->runnable_avg_period      : 47739
+
+rt_rq[21]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.004091
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/21   113       -11.967150    763264     0         0.000000      7880.230897         0.000000 1 /
+    migration/21   114         0.000000    217466     0         0.000000      2321.576796         0.000000 1 /
+    ksoftirqd/21   115 890493537.104119     38696   120         0.000000       965.670660         0.000000 1 /
+   kworker/21:0H   117     43129.139533         8   100         0.000000         0.032485         0.000000 1 /
+ kiblnd_sd_01_02  1098 890493566.348751   1460757   120         0.000000     27286.992398         0.000000 1 /
+   ptlrpcd_01_10  1146 890493883.958327   3274973   120         0.000000     36004.176089         0.000000 1 /
+   kworker/21:1H 22230 890493221.296070      1936   100         0.000000       210.434312         0.000000 1 /
+    kworker/21:2 24766 890493218.571935     41739   120         0.000000       505.676188         0.000000 1 /
+    kworker/21:0  4332 890493221.300343        15   120         0.000000         0.181537         0.000000 1 /
+    kworker/21:1 24312 890493858.729320       245   120         0.000000         3.249958         0.000000 1 /
+  likwid-accessD 26626 890493883.589984         3   120         0.000000         0.857611         0.000000 1 /
+  likwid-accessD 26627 890493895.951499        36   120         0.000000         0.506029         0.000000 1 /
+
+cpu#22, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 530878904
+  .nr_load_updates               : 1445400773
+  .nr_uninterruptible            : 2318
+  .next_balance                  : 7347.711423
+  .curr->pid                     : 0
+  .clock                         : 3052921814.023290
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 0
+  .cpu_load[4]                   : 0
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[22]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 881771420.332383
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8662678542.352955
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 16
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 22
+  .avg->runnable_avg_period      : 47310
+
+rt_rq[22]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.003790
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/22   118       -11.966902    763264     0         0.000000      7718.552893         0.000000 1 /
+    migration/22   119         0.000000    240579     0         0.000000      2814.554819         0.000000 1 /
+    ksoftirqd/22   120 881770989.603424     39432   120         0.000000       986.376517         0.000000 1 /
+   kworker/22:0H   122 880862936.736292      2332   100         0.000000       243.098441         0.000000 1 /
+   ptlrpcd_01_00  1136 881771408.335054   3272612   120         0.000000     35973.786481         0.000000 1 /
+   ptlrpcd_01_09  1145 881771408.347265   3292172   120         0.000000     35633.629730         0.000000 1 /
+   ldlm_cb01_002  7511 880862718.422550       834   120         0.000000        24.684302         0.000000 1 /
+   ldlm_cb01_004 20067 880923929.591800      2349   120         0.000000        71.525316         0.000000 1 /
+   kworker/22:1H 22229     46773.214397         2   100         0.000000         0.009405         0.000000 1 /
+    kworker/22:1 25232 881771383.349847     40521   120         0.000000       484.776757         0.000000 1 /
+      ldlm_bl_19  1219 881771278.544896       911   120         0.000000        61.291357         0.000000 1 /
+    kworker/22:2 13758 880898208.410986         2   120         0.000000         0.035184         0.000000 1 /
+  likwid-accessD 26628 881771408.041949         3   120         0.000000         0.666319         0.000000 1 /
+  likwid-accessD 26629 881771420.332383        36   120         0.000000         0.370474         0.000000 1 /
+
+cpu#23, 2666.869 MHz
+  .nr_running                    : 0
+  .load                          : 0
+  .nr_switches                   : 624962581
+  .nr_load_updates               : 1418434463
+  .nr_uninterruptible            : 22985
+  .next_balance                  : 7347.711377
+  .curr->pid                     : 0
+  .clock                         : 3052921814.015009
+  .cpu_load[0]                   : 0
+  .cpu_load[1]                   : 0
+  .cpu_load[2]                   : 0
+  .cpu_load[3]                   : 6
+  .cpu_load[4]                   : 60
+  .avg_idle                      : 1000000
+  .max_idle_balance_cost         : 500000
+
+cfs_rq[23]:/
+  .exec_clock                    : 0.000000
+  .MIN_vruntime                  : 0.000001
+  .min_vruntime                  : 841952974.848993
+  .max_vruntime                  : 0.000001
+  .spread                        : 0.000000
+  .spread0                       : -8702496987.836345
+  .nr_spread_over                : 0
+  .nr_running                    : 0
+  .load                          : 0
+  .runnable_load_avg             : 0
+  .blocked_load_avg              : 21
+  .tg_load_avg                   : 0
+  .tg_load_contrib               : 0
+  .tg_runnable_contrib           : 0
+  .tg->runnable_avg              : 0
+  .tg->cfs_bandwidth.timer_active: 0
+  .throttled                     : 0
+  .throttle_count                : 0
+  .avg->runnable_avg_sum         : 106
+  .avg->runnable_avg_period      : 47480
+
+rt_rq[23]:/
+  .rt_nr_running                 : 0
+  .rt_throttled                  : 0
+  .rt_time                       : 0.004204
+  .rt_runtime                    : 950.000000
+
+runnable tasks:
+            task   PID         tree-key  switches  prio     wait-time             sum-exec        sum-sleep
+----------------------------------------------------------------------------------------------------------
+     watchdog/23   123       -11.968259    763264     0         0.000000      7911.497623         0.000000 1 /
+    migration/23   124         0.000000    195220     0         0.000000      1846.841221         0.000000 1 /
+    ksoftirqd/23   125 841952921.834143    147967   120         0.000000      3914.441820         0.000000 1 /
+   kworker/23:0H   127 841952416.864164      2024   100         0.000000       235.017678         0.000000 1 /
+        gssproxy   433       150.724332         1   120         0.000000         0.017695         0.000000 1 /
+        gssproxy   435       162.730516         1   120         0.000000         0.006190         0.000000 1 /
+        gssproxy   436       174.734783         1   120         0.000000         0.004273         0.000000 1 /
+          mcelog   539 787108253.992858      7890   120         0.000000     10488.028441         0.000000 1 /
+   ptlrpcd_01_03  1139 841952962.856549   3295868   120         0.000000     34743.666316         0.000000 1 /
+   kworker/23:1H 22231     75783.037788         2   100         0.000000         0.011073         0.000000 1 /
+      ldlm_bl_07 29329 841317073.737091     71793   120         0.000000      1731.581737         0.000000 1 /
+    kworker/23:2 29091 841952936.662047     13752   120         0.000000       159.492944         0.000000 1 /
+    kworker/23:1  9430 841301382.573641         2   120         0.000000         0.045044         0.000000 1 /
+  likwid-accessD 26630 841952962.527951         3   120         0.000000         0.836335         0.000000 1 /
+  likwid-accessD 26631 841952974.848993        39   120         0.000000         0.432489         0.000000 1 /
+
+
++++++ Running uptime +++++
+ 16:31:04 up 35 days,  8:04,  0 users,  load average: 0.59, 0.78, 1.99
+
++++++ Running cat /etc/*-release | uniq +++++
+CentOS Linux release 7.4.1708 (Core) 
+NAME="CentOS Linux"
+VERSION="7 (Core)"
+ID="centos"
+ID_LIKE="rhel fedora"
+VERSION_ID="7"
+PRETTY_NAME="CentOS Linux 7 (Core)"
+ANSI_COLOR="0;31"
+CPE_NAME="cpe:/o:centos:centos:7"
+HOME_URL="https://www.centos.org/"
+BUG_REPORT_URL="https://bugs.centos.org/"
+
+CENTOS_MANTISBT_PROJECT="CentOS-7"
+CENTOS_MANTISBT_PROJECT_VERSION="7"
+REDHAT_SUPPORT_PRODUCT="centos"
+REDHAT_SUPPORT_PRODUCT_VERSION="7"
+
+CentOS Linux release 7.4.1708 (Core) 
+
++++++ Running uname -a +++++
+Linux l1418 3.10.0-693.5.2.el7.x86_64 #1 SMP Fri Oct 20 20:32:50 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
++++++ Running vmstat +++++
+procs -----------memory---------- ---swap-- -----io---- -system-- ------cpu-----
+ r  b   swpd   free   buff  cache   si   so    bi    bo   in   cs us sy id wa st
+ 0  0      0 21199548      0 2950804    0    0     0     0    0    0 53  1 46  0  0
+
++++++ Running  +++++
+Linux l1418 3.10.0-693.5.2.el7.x86_64 #1 SMP Fri Oct 20 20:32:50 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
++++++ Running cat /sys/devices/system/node//numastat +++++
+Numastats for node0
+numa_hit 5169968045
+numa_miss 8538564
+numa_foreign 3784243
+interleave_hit 179484
+local_node 5169887610
+other_node 8618999
+
+Numastats for node1
+numa_hit 5308938925
+numa_miss 3784243
+numa_foreign 8538564
+interleave_hit 211152
+local_node 5308765542
+other_node 3957626
+
+
++++++ Running cat /sys/devices/system/node/node1/meminfo +++++
+Meminfos for node0
+Node 0 MemTotal:       12573676 kB
+Node 0 MemFree:         9838812 kB
+Node 0 MemUsed:         2734864 kB
+Node 0 Active:            49524 kB
+Node 0 Inactive:        2031796 kB
+Node 0 Active(anon):      24112 kB
+Node 0 Inactive(anon):  1994980 kB
+Node 0 Active(file):      25412 kB
+Node 0 Inactive(file):    36816 kB
+Node 0 Unevictable:       21448 kB
+Node 0 Mlocked:           21448 kB
+Node 0 Dirty:                 0 kB
+Node 0 Writeback:             0 kB
+Node 0 FilePages:       2069732 kB
+Node 0 Mapped:            27080 kB
+Node 0 AnonPages:         32784 kB
+Node 0 Shmem:           2007504 kB
+Node 0 KernelStack:        4864 kB
+Node 0 PageTables:         1704 kB
+Node 0 NFS_Unstable:          0 kB
+Node 0 Bounce:                0 kB
+Node 0 WritebackTmp:          0 kB
+Node 0 Slab:             132124 kB
+Node 0 SReclaimable:      31752 kB
+Node 0 SUnreclaim:       100372 kB
+Node 0 AnonHugePages:     12288 kB
+Node 0 HugePages_Total:     0
+Node 0 HugePages_Free:      0
+Node 0 HugePages_Surp:      0
+
+Meminfos for node1
+Node 1 MemTotal:       12582912 kB
+Node 1 MemFree:        11359880 kB
+Node 1 MemUsed:         1223032 kB
+Node 1 Active:            37688 kB
+Node 1 Inactive:         658052 kB
+Node 1 Active(anon):      24828 kB
+Node 1 Inactive(anon):   621056 kB
+Node 1 Active(file):      12860 kB
+Node 1 Inactive(file):    36996 kB
+Node 1 Unevictable:         128 kB
+Node 1 Mlocked:             128 kB
+Node 1 Dirty:                 4 kB
+Node 1 Writeback:             0 kB
+Node 1 FilePages:        671192 kB
+Node 1 Mapped:            23728 kB
+Node 1 AnonPages:         24520 kB
+Node 1 Shmem:            621336 kB
+Node 1 KernelStack:        2288 kB
+Node 1 PageTables:         2748 kB
+Node 1 NFS_Unstable:          0 kB
+Node 1 Bounce:                0 kB
+Node 1 WritebackTmp:          0 kB
+Node 1 Slab:              77756 kB
+Node 1 SReclaimable:      16376 kB
+Node 1 SUnreclaim:        61380 kB
+Node 1 AnonHugePages:      2048 kB
+Node 1 HugePages_Total:     0
+Node 1 HugePages_Free:      0
+Node 1 HugePages_Surp:      0
+
+
++++++ Running cat /sys/devices/system/node//cpufreq/scaling_governor +++++
+Scaling governor for cpu0 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu1 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu2 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu3 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu4 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu5 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu6 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu7 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu8 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu9 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu10 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu11 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu12 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu13 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu14 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu15 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu16 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu17 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu18 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu19 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu20 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu21 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu22 and its current frequency
+performance
+2668000
+
+Scaling governor for cpu23 and its current frequency
+performance
+2668000
+
+
+Wed Dec 20 16:31:05 CET 2017
+========== End of Epilogue Info Listing ==========
